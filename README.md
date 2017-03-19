@@ -1,2 +1,0 @@
-# jasperdrescher.github.io
-Résumé

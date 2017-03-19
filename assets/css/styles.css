@@ -1,0 +1,501 @@
+/*   
+ * Template Name: Orbit - Responsive Resume/CV Template for Developers
+ * Version: 1.0
+ * Author: Xiaoying Riley
+ * Twitter: @3rdwave_themes
+ * License: Creative Commons Attribution 3.0 License
+ * Website: http://themes.3rdwavemedia.com/
+*/
+/* styles.css */
+/* ======= Base ======= */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  background: #f5f5f5;
+  font-size: 14px;
+  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+a {
+  color: #2d7788;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #1a454f;
+}
+a:focus {
+  text-decoration: none;
+}
+p {
+  line-height: 1.5;
+}
+.wrapper {
+  background: #42A8C0;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.sidebar-wrapper {
+  background: #42A8C0;
+  position: absolute;
+  right: 0;
+  width: 240px;
+  height: 100%;
+  min-height: 800px;
+  color: #fff;
+}
+.sidebar-wrapper a {
+  color: #fff;
+}
+.sidebar-wrapper .profile-container {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+.sidebar-wrapper .name {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sidebar-wrapper .profile {
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .contact-list .fa {
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.sidebar-wrapper .contact-list li {
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .contact-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .contact-list .email .fa {
+  font-size: 14px;
+}
+.sidebar-wrapper .container-block {
+  padding: 20px;
+}
+.sidebar-wrapper .container-block-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .degree {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.sidebar-wrapper .education-container .item {
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .education-container .item:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .education-container .meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+.sidebar-wrapper .education-container .time {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.sidebar-wrapper .languages-container .lang-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+.sidebar-wrapper .languages-list {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .languages-list li {
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .languages-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .interests-list {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .interests-list li {
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .interests-list li:last-child {
+  margin-bottom: 0;
+}
+.main-wrapper {
+  background: #fff;
+  padding: 60px;
+  padding-right: 300px;
+}
+.main-wrapper .section-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2d7788;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.main-wrapper .section-title .fa {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  display: inline-block;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #2d7788;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+.main-wrapper .section {
+  margin-bottom: 60px;
+}
+.main-wrapper .experiences-section .item {
+  margin-bottom: 30px;
+}
+.main-wrapper .upper-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.main-wrapper .job-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.main-wrapper .time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #97AAC3;
+}
+.main-wrapper .company {
+  margin-bottom: 10px;
+  color: #97AAC3;
+}
+.main-wrapper .project-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.main-wrapper .projects-section .intro {
+  margin-bottom: 30px;
+}
+.main-wrapper .projects-section .item {
+  margin-bottom: 15px;
+}
+.skillset .item {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.skillset .level-title {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.skillset .level-bar {
+  height: 12px;
+  background: #f5f5f5;
+}
+.skillset .level-bar-inner {
+  height: 12px;
+  background: #7bc2d3;
+}
+.footer {
+  padding: 30px;
+  padding-top: 60px;
+}
+.footer .copyright {
+  line-height: 1.6;
+  color: #545E6C;
+  font-size: 13px;
+}
+.footer .fa-heart {
+  color: #fb866a;
+}
+
+.technical-skills {
+  text-align: justify !important;
+  text-justify: distribute-all-lines;
+  font-size: 0 !important;
+}
+.technical-skills:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.technical-skills > * {
+  text-align: left;
+  font-size: medium;
+}
+
+.technical-skill {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.technical-skills {
+  padding-top: 1rem;
+}
+@media only screen and (max-width: 780px) {
+  .technical-skills {
+    margin-bottom: 0;
+  }
+}
+.technical-skill {
+  width: calc((100% - 2rem) / 3);
+  border: .3rem solid;
+  padding: .5rem;
+}
+/*
+.technical-skill:last-of-type {
+  position: relative;
+  left: calc((100% - 2rem) / 3 + 1rem);
+  margin-bottom: 0;
+}
+*/
+@media only screen and (min-width: 530px) and (max-width: 780px) {
+  .technical-skill {
+    width: calc((100% - 1rem) / 2);
+  }
+  .technical-skill:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .technical-skill:last-of-type {
+    left: initial;
+  }
+}
+@media only screen and (max-width: 529px) {
+  .technical-skill {
+    width: calc((100% - 0rem) / 1);
+  }
+  .technical-skill:nth-last-child(-n+3) {
+    margin-bottom: 1rem;
+  }
+  .technical-skill:last-of-type {
+    left: initial;
+    margin-bottom: 0;
+  }
+}
+
+.skill-logo {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 4rem;
+  height: 4rem;
+}
+.skill-logo svg {
+  position: absolute;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+}
+
+.skill-info {
+  margin: 0;
+  line-height: 1;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 0 0 5px;
+}
+
+.skill-level {
+  font-size: 1.3rem;
+  display: block;
+}
+
+.photoshop {
+  background: #17153D;
+  color: #bcf4fd;
+  border-color: #0FD8F7;
+  fill: #0FD8F7;
+}
+.photoshop h4 {
+  color: #0FD8F7;
+}
+
+.indesign {
+  background: #25000C;
+  color: #ffeff5;
+  border-color: #FB408C;
+  fill: #FB408C;
+}
+.indesign h4 {
+  color: #FB408C;
+}
+
+.acrobat {
+  background: #2B0000;
+  color: #ffb3b3;
+  border-color: #ff0000;
+  fill: #ff0000;
+}
+.acrobat h4 {
+  color: #ff0000;
+}
+
+.illustrator {
+  background: #310F00;
+  color: #ffe9d5;
+  border-color: #FF8F22;
+  fill: #FF8F22;
+}
+.illustrator h4 {
+  color: #FF8F22;
+}
+
+.premiere {
+  background: #190025;
+  color: #f9d5ff;
+  border-color: #e788ff;
+  fill: #e788ff;
+}
+.premiere h4 {
+  color: #e788ff;
+}
+
+.css {
+  background: #002A04;
+  color: #c6fdc0;
+  border-color: #29F912;
+  fill: #29F912;
+}
+.css h4 {
+  color: #29F912;
+}
+
+.html {
+  background: #290000;
+  color: #ffcdb3;
+  border-color: #FF5900;
+  fill: #FF5900;
+}
+.html h4 {
+  color: #FF5900;
+}
+
+.wordpress {
+  background: #000;
+  color: #dad9d9;
+  border-color: #827F7E;
+  fill: #827F7E;
+}
+.wordpress h4 {
+  color: #827F7E;
+}
+
+.grunt {
+  background: #301200;
+  color: #feebc8;
+  border-color: #fba919;
+  fill: #fba919;
+}
+.grunt h4 {
+  color: #fba919;
+}
+
+.git {
+  background: #200F00;
+  color: #fcd7ce;
+  border-color: #F05127;
+  fill: #F05127;
+}
+.git h4 {
+  color: #F05127;
+}
+
+.javascript {
+  background: #000D2D;
+  color: #8be1ff;
+  border-color: #00A0D7;
+  fill: #00A0D7;
+}
+.javascript h4 {
+  color: #00A0D7;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .sidebar-wrapper {
+    position: static;
+    width: inherit;
+  }
+  .main-wrapper {
+    padding: 30px;
+  }
+  .main-wrapper .time {
+    position: static;
+    display: block;
+    margin-top: 5px;
+  }
+  .main-wrapper .upper-row {
+    margin-bottom: 0;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .skillset .level-title {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .skillset .level-bar {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    position: relative;
+    top: 1px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+/* Ex-Large devices (large desktops, 1200px and up) */
