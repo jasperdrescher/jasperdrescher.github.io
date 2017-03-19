@@ -1,12 +1,3 @@
-/*   
- * Template Name: Orbit - Responsive Resume/CV Template for Developers
- * Version: 1.0
- * Author: Xiaoying Riley
- * Twitter: @3rdwave_themes
- * License: Creative Commons Attribution 3.0 License
- * Website: http://themes.3rdwavemedia.com/
-*/
-/* styles.css */
 /* ======= Base ======= */
 body {
   font-family: 'Roboto', sans-serif;
@@ -359,6 +350,26 @@ p {
 }
 .photoshop h4 {
   color: #0FD8F7;
+}
+
+.cpp {
+  background: #001837;
+  color: #bcf4fd;
+  border-color: #6599c8;
+  fill: #6599c8;
+}
+.cpp h4 {
+  color: #6599c8;
+}
+
+.csharp {
+  background: #26006a;
+  color: #bcf4fd;
+  border-color: #a078db;
+  fill: #a078db;
+}
+.csharp h4 {
+  color: #a078db;
 }
 
 .indesign {
