@@ -76,12 +76,12 @@ p {
   margin-bottom: 15px;
 }
 .sidebar-wrapper .contact-list .fa {
-  margin-right: 5px;
+  margin-right: 10px;
   font-size: 18px;
   vertical-align: middle;
 }
 .sidebar-wrapper .contact-list li {
-  margin-bottom: 15px;
+  margin:0px 0px 10px 40px;
 }
 .sidebar-wrapper .contact-list li:last-child {
   margin-bottom: 0;
@@ -90,7 +90,7 @@ p {
   font-size: 14px;
 }
 .sidebar-wrapper .container-block {
-  padding: 20px;
+  padding: 30px;
 }
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
