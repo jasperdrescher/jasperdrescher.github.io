@@ -1,0 +1,79 @@
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.filterButton:hover {
+  background-color: #ddd;
+}
+
+.filterButton.active {
+  background-color: #666;
+  color: white;
+}
+
+.button-small {
+  padding: 1px 6px;
+  text-transform: none;
+}
+
+.button-none {
+  padding: 1px 6px;
+  border: none;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.accordion {
+  border-top: 1px solid #d9e5e8;
+}
+
+.accordion li {
+  border-bottom: 1px solid #d9e5e8;
+  position: relative;
+}
+
+.accordion li p {
+  display: none;
+  padding: 10px 25px 30px;
+  color: #6b97a4;
+}
+
+.accordion a {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  line-height: 3;
+  user-select: none;
+}
+
+.accordion a:after {
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #4a6e78;
+  border-bottom: 1px solid #4a6e78;
+  position: absolute;
+  right: 10px;
+  content: " ";
+  top: 17px;
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.accordion p {
+  padding: 10px;
+}
+
+a.active:after {
+  transform: rotate(45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
