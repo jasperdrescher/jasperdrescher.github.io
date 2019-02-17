@@ -80,3 +80,24 @@ a.active:after {
 .tile {
   background-color: #ffffff;
 }
+
+.tileWrap {
+  position: relative;
+}
+
+.tileHeader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.tileWrap:hover .tileHeader {
+  visibility: visible;
+  opacity: 1;
+}
