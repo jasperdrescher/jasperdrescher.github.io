@@ -1,15 +1,9 @@
 filterSelection("all");
 
-var activeButton;
-
 function filterSelection(keyword, element) {
   var divs, i;
-  if (element != null)
-  {
-    setActiveButton(element);
-  }
   divs = document.getElementsByClassName("filterDiv");
-  if (keyword == "all") {
+  if (keyword == "all" || !setActiveButton(element)) {
     keyword = "";
   }
   for (i = 0; i < divs.length; i++) {
@@ -21,37 +15,29 @@ function filterSelection(keyword, element) {
 }
 
 function addClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
+  if (element.classList) {
+    element.classList.add(name);
+  } else {
+    element.className += ' ' + name;
   }
 }
 
 function removeClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
+  if (element.classList) {
+    element.classList.remove(name);
+  } else {
+    element.className = el.className.replace(new RegExp('(^|\\b)' + name.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
   }
-  element.className = arr1.join(" ");
 }
 
 function setActiveButton(element) {
-  activeButton = element;
   var activeButtons = document.getElementsByClassName("active");
-
-  for (i = 0; i < activeButtons.length; i++) {
-    removeClass(activeButtons[i], "active");
+  if(activeButtons[0] == null) {
+    addClass(element, "active");
+    return true;
   }
-
-  if(!activeButton.classList.contains("active")) {
-    addClass(activeButton, "active");
+  else {
+  removeClass(activeButtons[0], "active");
+  return false;
   }
 }

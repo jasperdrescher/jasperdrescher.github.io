@@ -30,18 +30,17 @@
 }
 
 .accordion {
-  border-top: 1px solid #d9e5e8;
+  border-top: 1px solid #E1E1E1;
 }
 
 .accordion li {
-  border-bottom: 1px solid #d9e5e8;
+  border-bottom: 1px solid #E1E1E1;
   position: relative;
 }
 
 .accordion li p {
   display: none;
   padding: 10px 25px 30px;
-  color: #6b97a4;
 }
 
 .accordion a {
@@ -55,8 +54,8 @@
 .accordion a:after {
   width: 8px;
   height: 8px;
-  border-right: 1px solid #4a6e78;
-  border-bottom: 1px solid #4a6e78;
+  border-right: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
   position: absolute;
   right: 10px;
   content: " ";
