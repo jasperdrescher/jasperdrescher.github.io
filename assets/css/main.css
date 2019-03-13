@@ -2576,6 +2576,11 @@ input, select, textarea {
 			margin: 0 0 1.3em 0;
 		}
 
+		.icon.major img {
+			width: 100%;
+			height: 100%;
+		}
+
 			.icon.major:before {
 				font-size: 1.25em;
 			}
