@@ -6,76 +6,104 @@
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <h1>Hi, I'm Jasper</h1>
+    <div class="container-fluid intro">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <h1>Jasper Drescher</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm">
-          <p>I'm a gameplay and tools programmer from The Netherlands.</p>
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <p>Gameplay & Tools Programmer from The Netherlands.</p>
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <input class="checkbox-cpp" type="checkbox" id="color-1"  checked="checked"/>
-          <label for="color-1">C++</label>
-          <input class="checkbox-csharp" type="checkbox" id="color-2"  checked="checked"/>
-          <label for="color-2">C#</label>
-          <input class="checkbox-java" type="checkbox" id="color-3"  checked="checked"/>
-          <label for="color-3">Java</label>
-          <input class="checkbox-javascript" type="checkbox" id="color-4"  checked="checked"/>
-          <label for="color-4">JavaScript</label>
+    <div class="container-fluid section">
+      <div class="row justify-content-md-center">
+        <input class="checkbox-cpp" type="checkbox" id="color-1"  checked="checked"/>
+        <label for="color-1">C++</label>
+        <input class="checkbox-csharp" type="checkbox" id="color-2"  checked="checked"/>
+        <label for="color-2">C#</label>
+        <input class="checkbox-java" type="checkbox" id="color-3"  checked="checked"/>
+        <label for="color-3">Java</label>
+        <input class="checkbox-javascript" type="checkbox" id="color-4"  checked="checked"/>
+        <label for="color-4">JavaScript</label>
 
-          <input class="checkbox-unity" type="checkbox" id="color-5"  checked="checked"/>
-          <label for="color-5">Unity</label>
-          <input class="checkbox-unreal" type="checkbox" id="color-6"  checked="checked"/>
-          <label for="color-6">Unreal Engine</label>
+        <input class="checkbox-unity" type="checkbox" id="color-5"  checked="checked"/>
+        <label for="color-5">Unity</label>
+        <input class="checkbox-unreal" type="checkbox" id="color-6"  checked="checked"/>
+        <label for="color-6">Unreal Engine</label>
 
-          <input class="checkbox-alizarin" type="checkbox" id="color-7"  checked="checked"/>
-          <label for="color-7">Git</label>
-          <input class="checkbox-alizarin" type="checkbox" id="color-8"  checked="checked"/>
-          <label for="color-8">Perforce</label>
-          <input class="checkbox-alizarin" type="checkbox" id="color-9"  checked="checked"/>
-          <label for="color-9">JIRA</label>
+        <input class="checkbox-alizarin" type="checkbox" id="color-7"  checked="checked"/>
+        <label for="color-7">Git</label>
+        <input class="checkbox-perforce" type="checkbox" id="color-8"  checked="checked"/>
+        <label for="color-8">Perforce</label>
+        <input class="checkbox-jira" type="checkbox" id="color-9"  checked="checked"/>
+        <label for="color-9">JIRA</label>
 
-          <div class="section p-0 pt-2"></div>
-          
-          <div class="col box cpp">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian" />
-            <span>Drivinity</span>
-            <div class="info">
-              <span>Drivinity</span>
-              <span class="cpp">C++</span>
-              <span class="alizarin">Perforce</span>
-              <span class="alizarin">JIRA</span>
-            </div>
+        <div class="section p-0 pt-2"></div>
+        
+        <div class="card cpp unreal perforce jira">
+          <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian">
+          <div class="card-body">
+            <h5 class="card-title">Stellar Survivor &middot; 2019</h5>
+            <p class="card-text">A fast-paced anti-gravity racing game where Egyptian Gods collide in an epic race to decide once and for all who is superior.</p>
+            <span class="cpp">C++</span>
+            <span class="unreal">Unreal Engine</span>
+            <span class="perforce">Perforce</span>
+            <span class="jira">JIRA</span>
+            <br />
+            <a href="#" class="btn link">View project</a>
           </div>
-          <div class="col box csharp"></div>
-          <div class="col box emerland"></div>
-          <div class="col box cpp"></div>
-          <div class="col box javascript"></div>
-          <div class="col box alizarin"></div>
-          <div class="col box csharp"></div>
-          <div class="col box emerland"></div>
-          <div class="col box cpp"></div>
-          <div class="col box javascript"></div>
-          <div class="col box alizarin"></div>
-          <div class="col box csharp"></div>
-          <div class="col box emerland"></div>
-          <div class="col box cpp"></div>
-          <div class="col box javascript"></div>
-          <div class="col box alizarin"></div>
-          <div class="col box csharp"></div>
-          <div class="col box emerland"></div>
-          <div class="col box cpp"></div>
-          <div class="col box javascript"></div>
         </div>
+
+        <div class="card cpp">
+          <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian">
+          <div class="card-body">
+            <h5 class="card-title">Drivinity &middot; 2018</h5>
+            <p class="card-text">A fast-paced anti-gravity racing game where Egyptian Gods collide in an epic race to decide once and for all who is superior.</p>
+            <a href="#" class="btn link">View project</a>
+          </div>
+        </div>
+
+        <div class="card cpp">
+          <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian">
+          <div class="card-body">
+            <h5 class="card-title">Lux Engine &middot; 2018</h5>
+            <p class="card-text">A cross-platform game engine with a a physically-based rendering pipeline tailored for anti-gravity racing games.</p>
+            <a href="#" class="btn link">View project</a>
+          </div>
+        </div>
+
+        <div class="card csharp">
+          <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian">
+          <div class="card-body">
+            <h5 class="card-title">FLUX &middot; 2018</h5>
+            <p class="card-text">A 4 player party game in which you play as a transcendent crystal being with the power to telepathically move objects around you.</p>
+            <a href="#" class="btn link">View project</a>
+          </div>
+        </div>
+
+        <div class="card cpp">
+          <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian">
+          <div class="card-body">
+            <h5 class="card-title">Super Plumber World &middot; 2017</h5>
+            <p class="card-text">A 2D tile-based platformer I made during my first semester at IGAD.</p>
+            <a href="#" class="btn link">View project</a>
+          </div>
+        </div>
+
+        <div class="card cpp">
+          <img class="card-img-top" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian">
+          <div class="card-body">
+            <h5 class="card-title">Virtual Cameras for Unity &middot; 2017</h5>
+            <p class="card-text">This Unity asset package contains some of the most used camera controllers in games. All scripts are written in C# and are easy to adjust using the inspector.</p>
+            <a href="#" class="btn link">View project</a>
+          </div>
+        </div>
+        
       </div>
     </div>
-    <a href="https://github.com/JasperDre" class="link" target=”_blank”><i class="fab fa-github"></i></a>
+    <a href="https://github.com/JasperDre" class="github" target=”_blank”><i class="fab fa-github"></i></a>
     </body>	
 </html>

@@ -13,15 +13,20 @@ body {
 a {
 	cursor: pointer;
 }
+
 a:hover {
 	text-decoration: none;
+}
+
+.intro {
+  margin: 25px;
 }
 
 .section {
   position: relative;
   width: 100%;
-  display: block;
-  padding: 70px 0;
+  display: inline-block;
+  padding: 25px;
 }
 
 [type="checkbox"]:checked,
@@ -174,28 +179,20 @@ a:hover {
   background-color: #f1c40f;
 }
 
-.box {
+.card {
+  width: 18rem;
+  background: none;
   border-radius: 10px;
   box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  overflow: hidden;
 }
 
-.box img {
-  position: absolute;
-  width: 400px;
-  top: -65px;
-  left: -70px;
+.card .btn-primary {
+  border-color: transparent;
 }
 
-.box span {
-  position: absolute;
-  padding: 10px;
-  color: #fff;
-}
-
-.box .info {
+.card .info {
   opacity: 0;
   min-height: 0;
   max-width: 0;
@@ -207,7 +204,7 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.box:hover .info {
+.card:hover .info {
   opacity: 1;
   min-height: 140px;
   max-width: 100%;
@@ -220,37 +217,66 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.box .cpp {
-  background-color: #2980b9;
+.card span {
+  position: relative;
+  margin: 0px 5px 0px 5px;
+  padding: 3px 6px 3px 6px;
+  cursor: pointer;
+  line-height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #fff;
   border-radius: 10px;
   box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
 }
 
-.box.alizarin {
-  background-color: #e74c3c;
+.card .btn {
+  margin-top: 1rem;
 }
 
-.box.csharp {
-  background-color: #8e44ad;
-}
-
-.box.emerland {
-  background-color: #2ecc71;
-}
-
-.box.cpp {
+.card .cpp {
   background-color: #2980b9;
 }
 
-.box.javascript {
-  background-color: #f1c40f;
+.card .csharp {
+  background-color: #8e44ad;
+  border-radius: 10px;
+  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
 }
 
-.box.alizarin,
-.box.csharp,
-.box.emerland,
-.box.cpp,
-.box.javascript {
+.card .unreal {
+  background-color: #3d9fed;
+}
+
+/*
+.card.alizarin {
+  background-color: #e74c3c;
+}
+
+.card.csharp {
+  background-color: #8e44ad;
+}
+
+.card.emerland {
+  background-color: #2ecc71;
+}
+
+.card.cpp {
+  background-color: #2980b9;
+}
+
+.card.javascript {
+  background-color: #f1c40f;
+}
+*/
+
+.card.alizarin,
+.card.csharp,
+.card.emerland,
+.card.cpp,
+.card.javascript {
   opacity: 0;
   min-height: 0;
   max-width: 0;
@@ -262,13 +288,14 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.checkbox-alizarin:checked ~ .box.alizarin,
-.checkbox-csharp:checked ~ .box.csharp,
-.checkbox-emerland:checked ~ .box.emerland,
-.checkbox-cpp:checked ~ .box.cpp,
-.checkbox-javascript:checked ~ .box.javascript {
+.checkbox-alizarin:checked ~ .card.alizarin,
+.checkbox-csharp:checked ~ .card.csharp,
+.checkbox-emerland:checked ~ .card.emerland,
+.checkbox-cpp:checked ~ .card.cpp,
+.checkbox-javascript:checked ~ .card.javascript {
   opacity: 1;
   min-height: 140px;
+  max-height: calc(25% - 20px);
   max-width: 100%;
   min-width: calc(25% - 20px);
   margin-left: 10px;
@@ -280,36 +307,36 @@ a:hover {
 }
 
 @media (max-width: 1199px) {	
-  .checkbox-alizarin:checked ~ .box.alizarin,
-  .checkbox-csharp:checked ~ .box.csharp,
-  .checkbox-emerland:checked ~ .box.emerland,
-  .checkbox-cpp:checked ~ .box.cpp,
-  .checkbox-javascript:checked ~ .box.javascript {
+  .checkbox-alizarin:checked ~ .card.alizarin,
+  .checkbox-csharp:checked ~ .card.csharp,
+  .checkbox-emerland:checked ~ .card.emerland,
+  .checkbox-cpp:checked ~ .card.cpp,
+  .checkbox-javascript:checked ~ .card.javascript {
     min-width: calc(33.333333333333% - 20px);
   }
 }
 
 @media (max-width: 991px) {	
-  .checkbox-alizarin:checked ~ .box.alizarin,
-  .checkbox-csharp:checked ~ .box.csharp,
-  .checkbox-emerland:checked ~ .box.emerland,
-  .checkbox-cpp:checked ~ .box.cpp,
-  .checkbox-javascript:checked ~ .box.javascript {
+  .checkbox-alizarin:checked ~ .card.alizarin,
+  .checkbox-csharp:checked ~ .card.csharp,
+  .checkbox-emerland:checked ~ .card.emerland,
+  .checkbox-cpp:checked ~ .card.cpp,
+  .checkbox-javascript:checked ~ .card.javascript {
     min-width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 575px) {	
-  .checkbox-alizarin:checked ~ .box.alizarin,
-  .checkbox-csharp:checked ~ .box.csharp,
-  .checkbox-emerland:checked ~ .box.emerland,
-  .checkbox-cpp:checked ~ .box.cpp,
-  .checkbox-javascript:checked ~ .box.javascript {
+  .checkbox-alizarin:checked ~ .card.alizarin,
+  .checkbox-csharp:checked ~ .card.csharp,
+  .checkbox-emerland:checked ~ .card.emerland,
+  .checkbox-cpp:checked ~ .card.cpp,
+  .checkbox-javascript:checked ~ .card.javascript {
     min-width: calc(100% - 20px);
   }
 }
 
-.link {
+.github {
 	  position: fixed;
     top: 30px;
     right: 30px;
@@ -325,17 +352,32 @@ a:hover {
     transition: opacity .2s, border-radius .2s, box-shadow .2s;
     transition-timing-function: ease-out;
 }
-.link:hover {
-    opacity: 0.8;
-    color: #866bb0;
-    border-radius: 50%;
-    box-shadow: 0 0 0 20px rgba(255,255,255,.1);
-}
 
-.link i {
+.github i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 24px;
+}
+
+.github:hover {
+  opacity: 0.8;
+  color: #866bb0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.1);
+}
+
+.link {
+  cursor: pointer;
+  text-align: center;
+  background-color: #0f1110;
+  color: #866bb0;
+}
+
+.link:hover {
+  opacity: 0.8;
+  color: #866bb0;
+  border-radius: 3px;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.1);
 }
