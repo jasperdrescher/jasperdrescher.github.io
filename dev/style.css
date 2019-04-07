@@ -12,9 +12,6 @@ body {
 
 a {
 	cursor: pointer;
-  text-align: center;
-  background-color: #0f1110;
-  color: #866bb0;
 }
 
 a:hover {
@@ -205,6 +202,16 @@ a:hover {
   visibility: hidden;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.card .thumbnail {
+  position: absolute;
+  top: -30px;
+}
+
+.card .top {
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
 }
 
 .card:hover .info {
@@ -421,4 +428,89 @@ a:hover {
   color: #866bb0;
   border-radius: 3px;
   box-shadow: 0 0 0 3px rgba(255,255,255,.1);
+}
+
+.table {
+  color: #c4c3ca;
+  border-radius: 10px;
+  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.table td, .table th {
+  border-top: none;
+}
+
+/* Accordion */
+.tab {
+  position: relative;
+  margin-bottom: 5px;
+  width: 100%;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+
+.tab-content p {
+  margin: 1em;
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+.tab label:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.tab label:after {
+  content: "\f3d0";
+  font-family: IonIcons;
+  font-size: 1.2em;
+  float: right;
+  position: relative;
+  top: -2px;
+  transition: .3s all;
+  transform: rotate(0deg);
+}
+
+.tab label:after {
+  transform: rotate(-180deg);
 }
