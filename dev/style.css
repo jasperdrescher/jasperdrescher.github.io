@@ -22,6 +22,10 @@ a:hover {
   margin: 25px;
 }
 
+.card-img-top {
+  width: auto;
+}
+
 .section {
   position: relative;
   width: 100%;
@@ -29,6 +33,7 @@ a:hover {
   padding: 25px;
 }
 
+/* Checkbox */
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
   position: absolute;
@@ -115,64 +120,55 @@ a:hover {
 
 .checkbox-csharp:checked + label:before,
 .checkbox-csharp:not(:checked) + label:before {
-  border: 1px solid #8e44ad;
+  border: 1px solid #2980b9;
 }
 .checkbox-csharp:checked + label:after,
 .checkbox-csharp:not(:checked) + label:after {
-  background-color: #8e44ad;
+  background-color: #2980b9;
 }
 
 .checkbox-java:checked + label:before,
 .checkbox-java:not(:checked) + label:before {
-  border: 1px solid #eda140;
+  border: 1px solid #2980b9;
 }
 
 .checkbox-java:checked + label:after,
 .checkbox-java:not(:checked) + label:after {
-  background-color: #eda140;
+  background-color: #2980b9;
 }
 
 .checkbox-javascript:checked + label:before,
 .checkbox-javascript:not(:checked) + label:before {
-  border: 1px solid #f1c40f;
+  border: 1px solid #2980b9;
 }
 
 .checkbox-javascript:checked + label:after,
 .checkbox-javascript:not(:checked) + label:after {
-  background-color: #f1c40f;
+  background-color: #2980b9;
 }
 
-.checkbox-emerland:checked + label:before,
-.checkbox-emerland:not(:checked) + label:before {
-  border: 1px solid #2ecc71;
-}
-.checkbox-emerland:checked + label:after,
-.checkbox-emerland:not(:checked) + label:after {
-  background-color: #2ecc71;
-}
-
-/* Engine */
+/* Checkbox engines */
 .checkbox-unity:checked + label:before,
 .checkbox-unity:not(:checked) + label:before {
-  border: 1px solid #3d91ed;
+  border: 1px solid #2ecc71;
 }
 
 .checkbox-unity:checked + label:after,
 .checkbox-unity:not(:checked) + label:after {
-  background-color: #3d91ed;
+  background-color: #2ecc71;
 }
 
 .checkbox-unreal:checked + label:before,
 .checkbox-unreal:not(:checked) + label:before {
-  border: 1px solid #3d9fed;
+  border: 1px solid #2ecc71;
 }
 
 .checkbox-unreal:checked + label:after,
 .checkbox-unreal:not(:checked) + label:after {
-  background-color: #3d9fed;
+  background-color: #2ecc71;
 }
 
-/* Software */
+/* Checkbox software */
 .checkbox-git:checked + label:before,
 .checkbox-git:not(:checked) + label:before {
   border: 1px solid #e74c3c;
@@ -193,6 +189,17 @@ a:hover {
   background-color: #e74c3c;
 }
 
+.checkbox-jira:checked + label:before,
+.checkbox-jira:not(:checked) + label:before {
+  border: 1px solid #e74c3c;
+}
+
+.checkbox-jira:checked + label:after,
+.checkbox-jira:not(:checked) + label:after {
+  background-color: #e74c3c;
+}
+
+/* Card */
 .card {
   width: 18rem;
   background: none;
@@ -220,12 +227,6 @@ a:hover {
 
 .card .thumbnail {
   position: absolute;
-  top: -30px;
-}
-
-.card .top {
-  border-top-left-radius: calc(.25rem - 1px);
-  border-top-right-radius: calc(.25rem - 1px);
 }
 
 .card:hover .info {
@@ -256,41 +257,17 @@ a:hover {
   box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
 }
 
-.card .cpp {
+.card .language {
   background-color: #2980b9;
 }
 
-.card .csharp {
-  background-color: #8e44ad;
-  border-radius: 10px;
-  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
-}
-
-.card .unreal {
-  background-color: #3d9fed;
-}
-
-/*
-.card.alizarin {
-  background-color: #e74c3c;
-}
-
-.card.csharp {
-  background-color: #8e44ad;
-}
-
-.card.emerland {
+.card .engine {
   background-color: #2ecc71;
 }
 
-.card.cpp {
-  background-color: #2980b9;
+.card .software {
+  background-color: #e74c3c;
 }
-
-.card.javascript {
-  background-color: #f1c40f;
-}
-*/
 
 .card.alizarin,
 .card.csharp,
