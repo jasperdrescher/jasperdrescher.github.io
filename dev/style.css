@@ -209,6 +209,19 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+.card.default {
+  min-height: 140px;
+  max-height: calc(25% - 20px);
+  max-width: 100%;
+  min-width: calc(25% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .card .btn-primary {
   border-color: transparent;
 }
