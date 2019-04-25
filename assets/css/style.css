@@ -68,6 +68,11 @@ header .overlay {
   }
 }
 
+/* footer */
+.page-footer {
+  margin-top: 2rem;
+}
+
 .list-group-item-c {
   position: relative;
   display: block;
