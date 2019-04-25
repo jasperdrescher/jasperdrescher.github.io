@@ -68,6 +68,11 @@ header .overlay {
   }
 }
 
+.list-group-item-c {
+  position: relative;
+  display: block;
+}
+
 .intro {
   margin-top: 1rem;
 }
