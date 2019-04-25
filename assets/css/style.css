@@ -61,7 +61,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url('https://source.unsplash.com/Q1Ka2cD9XSY/1600x900') black no-repeat center center scroll;
   }
   header video {
     display: none;
@@ -200,22 +200,22 @@ header .overlay {
 /* Checkbox engines */
 .checkbox-unity:checked + label:before,
 .checkbox-unity:not(:checked) + label:before {
-  border: 1px solid #2ecc71;
+  border: 1px solid #28b938;
 }
 
 .checkbox-unity:checked + label:after,
 .checkbox-unity:not(:checked) + label:after {
-  background-color: #2ecc71;
+  background-color: #28b938;
 }
 
 .checkbox-unreal:checked + label:before,
 .checkbox-unreal:not(:checked) + label:before {
-  border: 1px solid #2ecc71;
+  border: 1px solid #28b938;
 }
 
 .checkbox-unreal:checked + label:after,
 .checkbox-unreal:not(:checked) + label:after {
-  background-color: #2ecc71;
+  background-color: #28b938;
 }
 
 /* Checkbox software */
@@ -247,6 +247,37 @@ header .overlay {
 .checkbox-jira:checked + label:after,
 .checkbox-jira:not(:checked) + label:after {
   background-color: #e74c3c;
+}
+
+/* Checkbox platforms */
+.checkbox-windows:checked + label:before,
+.checkbox-windows:not(:checked) + label:before {
+  border: 1px solid #9728b9;
+}
+
+.checkbox-windows:checked + label:after,
+.checkbox-windows:not(:checked) + label:after {
+  background-color: #9728b9;
+}
+
+.checkbox-playstation:checked + label:before,
+.checkbox-playstation:not(:checked) + label:before {
+  border: 1px solid #9728b9;
+}
+
+.checkbox-playstation:checked + label:after,
+.checkbox-playstation:not(:checked) + label:after {
+  background-color: #9728b9;
+}
+
+.checkbox-android:checked + label:before,
+.checkbox-android:not(:checked) + label:before {
+  border: 1px solid #9728b9;
+}
+
+.checkbox-android:checked + label:after,
+.checkbox-android:not(:checked) + label:after {
+  background-color: #9728b9;
 }
 
 /* Card */
@@ -325,11 +356,15 @@ header .overlay {
 }
 
 .card .engine {
-  background-color: #2ecc71;
+  background-color: #28b938;
 }
 
 .card .software {
   background-color: #e74c3c;
+}
+
+.card .platform {
+  background-color: #9728b9;
 }
 
 .card.alizarin,
@@ -399,7 +434,7 @@ header .overlay {
 .mail {
   position: fixed;
   top: 30px;
-  right: 80px;
+  right: 130px;
   z-index: 200;
   cursor: pointer;
   width: 40px;
@@ -430,7 +465,24 @@ header .overlay {
   transition-timing-function: ease-out;
 }
 
-.github i, .mail i {
+.linkedin {
+  position: fixed;
+  top: 30px;
+  right: 80px;
+  z-index: 200;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #0f1110;
+  color: #866bb0;
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px rgba(255,255,255,.1);
+  transition: opacity .2s, border-radius .2s, box-shadow .2s;
+  transition-timing-function: ease-out;
+}
+
+.github i, .mail i, .linkedin i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -438,7 +490,7 @@ header .overlay {
   font-size: 24px;
 }
 
-.github:hover, .mail:hover {
+.github:hover, .mail:hover, .linkedin:hover {
   opacity: 0.8;
   color: #866bb0;
   border-radius: 50%;
