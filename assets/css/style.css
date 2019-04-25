@@ -447,7 +447,6 @@ header .overlay {
   height: 40px;
   text-align: center;
   background-color: #0f1110;
-  color: #866bb0;
   border-radius: 3px;
   box-shadow: 0 0 0 2px rgba(255,255,255,.1);
   transition: opacity .2s, border-radius .2s, box-shadow .2s;
@@ -464,7 +463,6 @@ header .overlay {
   height: 40px;
   text-align: center;
   background-color: #0f1110;
-  color: #866bb0;
   border-radius: 3px;
   box-shadow: 0 0 0 2px rgba(255,255,255,.1);
   transition: opacity .2s, border-radius .2s, box-shadow .2s;
@@ -481,7 +479,6 @@ header .overlay {
   height: 40px;
   text-align: center;
   background-color: #0f1110;
-  color: #866bb0;
   border-radius: 3px;
   box-shadow: 0 0 0 2px rgba(255,255,255,.1);
   transition: opacity .2s, border-radius .2s, box-shadow .2s;
@@ -498,7 +495,6 @@ header .overlay {
 
 .github:hover, .mail:hover, .linkedin:hover {
   opacity: 0.8;
-  color: #866bb0;
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(255,255,255,.1);
 }
@@ -512,7 +508,6 @@ header .overlay {
 
 .link:hover {
   opacity: 0.8;
-  color: #866bb0;
   border-radius: 3px;
   box-shadow: 0 0 0 3px rgba(255,255,255,.1);
 }
@@ -524,7 +519,6 @@ header .overlay {
   padding: 8px 8px 4px 8px;
   text-align: center;
   background-color: #0f1110;
-  color: #866bb0;
   border-radius: 3px;
   box-shadow: 0 0 0 2px rgba(255,255,255,.1);
   transition: opacity .2s, border-radius .2s, box-shadow .2s;
@@ -537,7 +531,6 @@ header .overlay {
 
 .project-link:hover {
   opacity: 0.8;
-  color: #866bb0;
   border-radius: 3px;
   box-shadow: 0 0 0 3px rgba(255,255,255,.1);
 }
