@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
 
+/* General */
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
@@ -16,6 +17,18 @@ a {
 
 a:hover {
 	text-decoration: none;
+}
+
+.table {
+  color: #c4c3ca;
+  border-radius: 10px;
+  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.table td, .table th {
+  border-top: none;
 }
 
 /* Header */
@@ -61,7 +74,7 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url('https://source.unsplash.com/Q1Ka2cD9XSY/1600x900') black no-repeat center center scroll;
+    display: none;
   }
   header video {
     display: none;
@@ -498,58 +511,16 @@ header .overlay {
   font-size: 24px;
 }
 
+@media (pointer: coarse) and (hover: none) {
+  .github, .mail, .linkedin {
+    display: none;
+  }
+}
+
 .github:hover, .mail:hover, .linkedin:hover {
   opacity: 0.8;
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgba(255,255,255,.1);
-}
-
-.link {
-  cursor: pointer;
-  text-align: center;
-  background-color: #0f1110;
-  color: #866bb0;
-}
-
-.link:hover {
-  opacity: 0.8;
-  border-radius: 3px;
-  box-shadow: 0 0 0 3px rgba(255,255,255,.1);
-}
-
-.project-link {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  padding: 8px 8px 4px 8px;
-  text-align: center;
-  background-color: #0f1110;
-  border-radius: 3px;
-  box-shadow: 0 0 0 2px rgba(255,255,255,.1);
-  transition: opacity .2s, border-radius .2s, box-shadow .2s;
-  transition-timing-function: ease-out;
-}
-
-.project-link i {
-  font-size: 24px;
-}
-
-.project-link:hover {
-  opacity: 0.8;
-  border-radius: 3px;
-  box-shadow: 0 0 0 3px rgba(255,255,255,.1);
-}
-
-.table {
-  color: #c4c3ca;
-  border-radius: 10px;
-  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.table td, .table th {
-  border-top: none;
 }
 
 /* Accordion */
