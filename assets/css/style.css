@@ -31,6 +31,27 @@ a:hover {
   border-top: none;
 }
 
+/* Navbar */
+nav {
+  background-color: #1f2029;
+  z-index: 999;
+}
+
+nav.sticky {
+  position: sticky;
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand.abs
+    {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      text-align: center;
+    }
+}
+
 /* Header */
 header {
   position: relative;
