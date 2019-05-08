@@ -42,14 +42,10 @@ nav.sticky {
   top: 0;
 }
 
-@media (min-width: 768px) {
-  .navbar-brand.abs
-    {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      text-align: center;
-    }
+nav .brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Header */
