@@ -330,42 +330,29 @@ header .overlay {
   transition: all 0.3s ease;
 }
 
+.card .blue {
+  background: url("../images/bg-blue.png") no-repeat center;
+}
+
+.card .brown {
+  background: url("../images/bg-brown.png") no-repeat center;
+}
+
+.card .green {
+  background: url("../images/bg-green.png") no-repeat center;
+}
+
+.card .pink {
+  background: url("../images/bg-pink.png") no-repeat center;
+}
+
+.card .red {
+  background: url("../images/bg-red.png") no-repeat center;
+}
+
 .card.default {
   min-height: 140px;
   max-height: calc(25% - 20px);
-  max-width: 100%;
-  min-width: calc(25% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 20px;
-  visibility: visible;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.card .btn-primary {
-  border-color: transparent;
-}
-
-.card .info {
-  opacity: 0;
-  min-height: 0;
-  max-width: 0;
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.card .thumbnail {
-  position: absolute;
-}
-
-.card:hover .info {
-  opacity: 1;
-  min-height: 140px;
   max-width: 100%;
   min-width: calc(25% - 20px);
   margin-left: 10px;
