@@ -394,11 +394,12 @@ header .overlay {
   background-color: #9728b9;
 }
 
-.card.alizarin,
-.card.csharp,
-.card.emerland,
 .card.cpp,
-.card.javascript {
+.card.csharp,
+.card.java,
+.card.javascript,
+.card.unity
+.card.unreal {
   opacity: 0;
   max-height: 0;
   min-height: 0;
@@ -411,11 +412,12 @@ header .overlay {
   transition: all 0.3s ease;
 }
 
-.checkbox-alizarin:checked ~ .card.alizarin,
-.checkbox-csharp:checked ~ .card.csharp,
-.checkbox-emerland:checked ~ .card.emerland,
 .checkbox-cpp:checked ~ .card.cpp,
-.checkbox-javascript:checked ~ .card.javascript {
+.checkbox-csharp:checked ~ .card.csharp,
+.checkbox-java:checked ~ .card.java,
+.checkbox-javascript:checked ~ .card.javascript,
+.checkbox-unity:checked ~ .card.unity,
+.checkbox-unreal:checked ~ .card.unreal {
   opacity: 1;
   min-height: 140px;
   max-height: calc(25% - 20px);
@@ -430,31 +432,34 @@ header .overlay {
 }
 
 @media (max-width: 1199px) {	
-  .checkbox-alizarin:checked ~ .card.alizarin,
-  .checkbox-csharp:checked ~ .card.csharp,
-  .checkbox-emerland:checked ~ .card.emerland,
   .checkbox-cpp:checked ~ .card.cpp,
-  .checkbox-javascript:checked ~ .card.javascript {
+  .checkbox-csharp:checked ~ .card.csharp,
+  .checkbox-java:checked ~ .card.java,
+  .checkbox-javascript:checked ~ .card.javascript,
+  .checkbox-unity:checked ~ .card.unity,
+  .checkbox-unreal:checked ~ .card.unreal {
     min-width: calc(33.333333333333% - 20px);
   }
 }
 
 @media (max-width: 991px) {	
-  .checkbox-alizarin:checked ~ .card.alizarin,
-  .checkbox-csharp:checked ~ .card.csharp,
-  .checkbox-emerland:checked ~ .card.emerland,
   .checkbox-cpp:checked ~ .card.cpp,
-  .checkbox-javascript:checked ~ .card.javascript {
+  .checkbox-csharp:checked ~ .card.csharp,
+  .checkbox-java:checked ~ .card.java,
+  .checkbox-javascript:checked ~ .card.javascript,
+  .checkbox-unity:checked ~ .card.unity,
+  .checkbox-unreal:checked ~ .card.unreal {
     min-width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 575px) {	
-  .checkbox-alizarin:checked ~ .card.alizarin,
-  .checkbox-csharp:checked ~ .card.csharp,
-  .checkbox-emerland:checked ~ .card.emerland,
   .checkbox-cpp:checked ~ .card.cpp,
-  .checkbox-javascript:checked ~ .card.javascript {
+  .checkbox-csharp:checked ~ .card.csharp,
+  .checkbox-java:checked ~ .card.java,
+  .checkbox-javascript:checked ~ .card.javascript,
+  .checkbox-unity:checked ~ .card.unity,
+  .checkbox-unreal:checked ~ .card.unreal {
     min-width: calc(100% - 20px);
   }
 }
