@@ -332,22 +332,27 @@ header .overlay {
 
 .card .blue {
   background: url("../images/bg-blue.png") no-repeat center;
+  background-size: 100%;
 }
 
 .card .brown {
   background: url("../images/bg-brown.png") no-repeat center;
+  background-size: 100%;
 }
 
 .card .green {
   background: url("../images/bg-green.png") no-repeat center;
+  background-size: 100%;
 }
 
 .card .pink {
   background: url("../images/bg-pink.png") no-repeat center;
+  background-size: 100%;
 }
 
 .card .red {
   background: url("../images/bg-red.png") no-repeat center;
+  background-size: 100%;
 }
 
 .card.default {
