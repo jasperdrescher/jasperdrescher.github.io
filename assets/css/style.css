@@ -51,11 +51,18 @@ nav .brand {
 /* Header */
 header {
   position: relative;
+  margin-top: 0.5rem;
   background-color: black;
   height: 75vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 25rem;
+  }
 }
 
 header video {
@@ -85,17 +92,8 @@ header .overlay {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.25;
   z-index: 1;
-}
-
-@media (pointer: coarse) and (hover: none) {
-  header {
-    display: none;
-  }
-  header video {
-    display: none;
-  }
 }
 
 /* footer */
