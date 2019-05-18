@@ -20,7 +20,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
   </head>
   <body>
@@ -37,7 +37,7 @@
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="resume/Résumé_Jasper.pdf" target=”_blank”><i class="fas fa-file-alt fa-2x"></i></a>
+            <a class="nav-link" href="../../resume/Résumé_Jasper.pdf" target=”_blank”><i class="fas fa-file-alt fa-2x"></i></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="mailto:jasperdre@gmail.com" target=”_blank”><i class="fas fa-envelope fa-2x"></i></a>
@@ -61,7 +61,7 @@
               </tr>
               <tr>
                 <th scope="row">Team</th>
-                <td>Sticks & Stones</td>
+                <td><a href="../../index.html#sticks&stones">Sticks & Stones</a></td>
               </tr>
               <tr>
                 <th scope="row">Duration</th>
@@ -91,7 +91,8 @@
           Stellar Survivor is our first-person, co-op photo-realistic survival game. Players can play alone or together with friends on Steam fighting off hordes of alien enemies that try to destroy the powercore the players have to defend. Players do so with the use of weapons with different characteristics and traps that, when put to good use, can take down these aliens effectively.
         </div>
         <div class="col">
-          <!-- Links -->
+          <a href="https://store.steampowered.com/app/1032120/" class="project-link" target=”_blank”><i class="fab fa-steam"></i> Steam</a>
+          <a href="https://www.facebook.com/StellarSurvivor/" class="project-link" target=”_blank”><i class="fab fa-facebook"></i> Facebook</a>
         </div>
       </div>
       <div class="row">
@@ -99,27 +100,55 @@
           <h1>My contributions</h1>
           <div class="tab">
             <input id="tab-one" type="checkbox" name="tabs">
-            <label for="tab-one">Base building</label>
+            <label for="tab-one">Multiplayer matchmaking</label>
             <div class="tab-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+              <p>Lobby, invites, listen server.</p>
             </div>
           </div>
           <div class="tab">
             <input id="tab-two" type="checkbox" name="tabs">
-            <label for="tab-two">Enemy AI behavior</label>
+            <label for="tab-two">Multiplayer social interactions</label>
             <div class="tab-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+              <p>Chat, player names.</p>
             </div>
           </div>
           <div class="tab">
             <input id="tab-three" type="checkbox" name="tabs">
-            <label for="tab-three">Network engineering</label>
+            <label for="tab-three">Base building</label>
             <div class="tab-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+              <p>Previewing and spawning models.</p>
+            </div>
+          </div>
+          <div class="tab">
+            <input id="tab-four" type="checkbox" name="tabs">
+            <label for="tab-four">Enemy AI behavior</label>
+            <div class="tab-content">
+              <p>Enemy AIC, behaviour tree, blackboard.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto">
+            <a href="https://twitter.com/jasperdre" class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <a href="https://codepen.io/JasperDre/" class="cp-ic">
+              <i class="fab fa-codepen fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <a href="https://github.com/JasperDre" class="gh-ic">
+              <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jasperdre/" class="li-ic">
+              <i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3">© 2019 by Jasper Drescher under the <a href="https://github.com/JasperDre/jasperdre.github.io/blob/master/LICENSE.md">MIT License</a>.</div>
+    </footer>
   </body>	
 </html>
