@@ -96,6 +96,11 @@ header .overlay {
   z-index: 1;
 }
 
+header .overlay:hover {
+  background-color: #007bff;
+  opacity: 0.2;
+}
+
 /* footer */
 .page-footer {
   margin-top: 2rem;
