@@ -42,10 +42,46 @@ nav.sticky {
   top: 0;
 }
 
-nav .brand {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+@media only screen and (min-width: 768px) {
+  nav .page {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav .page {
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+  nav .nav-link {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav .brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav .brand {
+    top: 15px;
+  }
 }
 
 /* Header */
@@ -469,6 +505,54 @@ header .overlay:hover {
   .checkbox-unreal:checked ~ .card.unreal {
     min-width: calc(100% - 20px);
   }
+}
+
+/* Slider */
+.slider {
+  min-height: 140px;
+  max-width: 100%;
+  min-width: 24rem;
+}
+.slider input {
+  display: none;
+}
+
+.slider .radio {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border: 2px solid #000;
+	border-radius: 50%;
+	display: inline-block;
+  transition: background-color .4s;
+}
+
+.slider .radio:hover {
+  background-color: #727272;
+}
+
+.slider #one, .slider #two, .slider #three {
+  display: none;
+  transition-property: opacity;
+  transition-duration: .5s;
+}
+
+#img-1:checked ~ .img-box #one,
+#img-2:checked ~ .img-box #two,
+#img-3:checked ~ .img-box #three {
+  display: block;
+}
+
+.slider input:checked ~ .radio {
+	color: #FFF;
+	background-color: #000;
+}
+
+.slider #img-1:checked ~ .sliders label #dot-1.radio,
+.slider #img-2:checked ~ .sliders label #dot-2.radio,
+.slider #img-3:checked ~ .sliders label #dot-3.radio {
+  color: #FFF;
+  background-color: #000;
 }
 
 /* Accordion */
