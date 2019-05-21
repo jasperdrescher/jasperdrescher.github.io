@@ -115,10 +115,6 @@ header .overlay:hover {
   margin-top: 1rem;
 }
 
-.card-img-top {
-  width: auto;
-}
-
 .section {
   position: relative;
   width: 100%;
@@ -439,7 +435,8 @@ header .overlay:hover {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 1199px) {	
+@media (max-width: 1199px) {
+  .card.default,
   .checkbox-cpp:checked ~ .card.cpp,
   .checkbox-csharp:checked ~ .card.csharp,
   .checkbox-java:checked ~ .card.java,
@@ -450,7 +447,8 @@ header .overlay:hover {
   }
 }
 
-@media (max-width: 991px) {	
+@media (max-width: 991px) {
+  .card.default,
   .checkbox-cpp:checked ~ .card.cpp,
   .checkbox-csharp:checked ~ .card.csharp,
   .checkbox-java:checked ~ .card.java,
@@ -462,6 +460,7 @@ header .overlay:hover {
 }
 
 @media (max-width: 575px) {	
+  .card.default,
   .checkbox-cpp:checked ~ .card.cpp,
   .checkbox-csharp:checked ~ .card.csharp,
   .checkbox-java:checked ~ .card.java,
