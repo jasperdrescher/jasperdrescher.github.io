@@ -25,27 +25,18 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md sticky">
-      <a class="navbar-brand" href="../../">Portfolio</a>/ Lux Engine
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="collapsingNavbar">
-        <ul class="navbar-nav brand">
-          <li class="nav-item">
-            <h1>Jasper Drescher</h1>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../../resume/Résumé_Jasper.pdf" target=”_blank”><i class="fas fa-file-alt fa-2x"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:jasperdre@gmail.com" target=”_blank”><i class="fas fa-envelope fa-2x"></i></a>
-          </li>
-        </ul>
-      </div>
+      <span class="page"><a href="../../">Portfolio</a> / Lux Engine</span>
+      <span class="brand"><h1>Jasper Drescher</h1></span>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../resume/Résumé_Jasper.pdf" target=”_blank”><i class="fas fa-file-alt fa-2x"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:jasperdre@gmail.com" target=”_blank”><i class="fas fa-envelope fa-2x"></i></a>
+        </li>
+      </ul>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm">
           <div class="embed-responsive embed-responsive-16by9">
@@ -81,22 +72,40 @@
               </tr>
             </tbody>
           </table>
+          <div class="row justify-content-start">
+            <div class="col-2">
+              <a href="https://igad.itch.io/drivinity" class="project-link" target=”_blank”><i class="fab fa-itch-io"></i> Itch.io</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card slider">
+            <input type="radio" name="slide" id="img-1" checked>
+            <input type="radio" name="slide" id="img-2">
+            <input type="radio" name="slide" id="img-3">
+            <div class="img-box">
+              <img class="card-img-top" id="three" src="../../assets/images/StellarSurvivor/img3.png">
+              <img class="card-img-top" id="two" src="../../assets/images/StellarSurvivor/img2.png">
+              <img class="card-img-top" id="one" src="../../assets/images/StellarSurvivor/img1.png">
+            </div>
+            <div class="card-body text-center sliders">
+                <label for="img-1"><div id="dot-1" class="radio"></div></label>
+                <label for="img-2"><div id="dot-2" class="radio"></div></label>
+                <label for="img-3"><div id="dot-3" class="radio"></div></label>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
       <div class="row">
         <div class="col">
           <h1>Description</h1>
-          As an Engine Programmer my job was to develop the architecture of the object-oriented game engine, and to implement a physically based rendering pipeline with GLTF. During the first 8 weeks of development, I managed the Scrum board and iterated on the design and implementation of most low-level architecture and classes. Other work, such as the renderer and custom memory allocator was done by fellow programming students.
-        </div>
-        <div class="col">
-          <a href="https://igad.itch.io/drivinity" class="project-link" target=”_blank”><i class="fab fa-itch-io"></i> Itch.io</a>
+          Lux Engine is an cross-platform game racing game engine for Windows and PlayStation 4. It was developed during 8 weeks in my second year at Breda University of Applied Sciences, right before Drivinity.
         </div>
       </div>
       <div class="row">
         <div class="col">
           <h1>My contributions</h1>
+          As an Engine & Tools Programmer my job was to develop the architecture of the object-oriented game engine, and to implement a physically based rendering pipeline with GLTF. I also managed the Scrum board and iterated on the design and implementation of most low-level architecture and classes. Other work, such as the renderer and custom memory allocator was done by fellow programming students.
           <div class="tab">
             <input id="tab-one" type="checkbox" name="tabs">
             <label for="tab-one">Cross-platform input</label>
@@ -129,23 +138,19 @@
       </div>
     </div>
     <footer class="page-footer">
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col-md-auto">
-            <a href="https://twitter.com/jasperdre" class="tw-ic">
-              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-            </a>
-            <a href="https://codepen.io/JasperDre/" class="cp-ic">
-              <i class="fab fa-codepen fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-            </a>
-            <a href="https://github.com/JasperDre" class="gh-ic">
-              <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/jasperdre/" class="li-ic">
-              <i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-            </a>
-          </div>
-        </div>
+      <div class="text-center">
+        <a href="https://twitter.com/jasperdre" class="tw-ic">
+          <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+        </a>
+        <a href="https://codepen.io/JasperDre/" class="cp-ic">
+          <i class="fab fa-codepen fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+        </a>
+        <a href="https://github.com/JasperDre" class="gh-ic">
+          <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jasperdre/" class="li-ic">
+          <i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+        </a>
       </div>
       <div class="footer-copyright text-center py-3">© 2019 by Jasper Drescher under the <a href="https://github.com/JasperDre/jasperdre.github.io/blob/master/LICENSE.md">MIT License</a>.</div>
     </footer>
