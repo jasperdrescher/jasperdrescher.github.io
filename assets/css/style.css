@@ -21,8 +21,6 @@ a:hover {
 
 .table {
   color: #c4c3ca;
-  border-radius: 10px;
-  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -33,7 +31,7 @@ a:hover {
 
 img.thumbnail {
   padding: .5rem;
-  max-width: 76px;
+  max-width: 72px;
   height: auto;
 }
 
@@ -218,7 +216,6 @@ header .overlay:hover {
   width: calc(100% - 8px);
   border-radius: 2px;
   height: 22px;
-  background-color: #e74c3c;
   position: absolute;
   top: 4px;
   left: 4px;
@@ -365,7 +362,6 @@ header .overlay:hover {
 /* Card */
 .card {
   display: flex;
-  width: 28rem;
   background: none;
   border-radius: 10px;
   box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
@@ -488,18 +484,13 @@ header .overlay:hover {
 }
 
 /* Slider */
-.slider {
-  min-height: 140px;
-  max-width: 100%;
-  min-width: 24rem;
-}
 .slider input {
   display: none;
 }
 
 .slider .radio {
 	width: 20px;
-	height: 20px;
+  height: 20px;
 	cursor: pointer;
 	border: 2px solid #000;
 	border-radius: 50%;
@@ -509,6 +500,10 @@ header .overlay:hover {
 
 .slider .radio:hover {
   background-color: #727272;
+}
+
+.slider label {
+  margin: .5rem .25rem 0 .25rem;
 }
 
 .slider #one, .slider #two, .slider #three {

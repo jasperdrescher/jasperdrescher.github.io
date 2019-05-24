@@ -36,45 +36,58 @@
         </li>
       </ul>
     </nav>
-    <div class="container-fluid section">
+    <div class="container-fluid mt-2">
       <div class="row">
-        <div class="col-sm">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X6EYlIg9p-k" allowfullscreen></iframe>
-          </div>
+        <div class="col">
+            <div class="card border-dark mb-3">
+                <div class="card-header">Trailer</div>
+                <div class="card-body text-dark">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X6EYlIg9p-k" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
         </div>
         <div class="col">
-          <table class="table">
-            <tbody>
-              <tr>
-                <th scope="row">Role</th>
-                <td>Gameplay, Tools & Network Programmer</td>
-              </tr>
-              <tr>
-                <th scope="row">Team</th>
-                <td><a href="../../index.html#sticks&stones">Sticks & Stones</a></td>
-              </tr>
-              <tr>
-                <th scope="row">Duration</th>
-                <td>September 2018 - present</td>
-              </tr>
-              <tr>
-                <th scope="row">Engine</th>
-                <td>Unreal Engine</td>
-              </tr>
-              <tr>
-                <th scope="row">Platform</th>
-                <td>Windows</td>
-              </tr>
-              <tr>
-                <th scope="row">Language</th>
-                <td>C++</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="card border-dark mb-3">
+            <div class="card-header">Specifications</div>
+            <div class="card-body text-dark">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Role</th>
+                    <td>Gameplay, Tools & Network Programmer</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Team</th>
+                    <td><a href="../../index.html#sticks&stones">Sticks & Stones</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Duration</th>
+                    <td>September 2018 - present</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Engine</th>
+                    <td>Unreal Engine 4.22</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Platforms</th>
+                    <td>Windows 10, Steam</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Language</th>
+                    <td>C++11</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>          
           <div class="row justify-content-start">
             <div class="col-2">
               <a href="https://store.steampowered.com/app/1032120/" class="project-link" target=”_blank”><i class="fab fa-steam"></i> Steam</a>
+            </div>
+            <div class="col-2">
+              <a href="https://igad.itch.io/stellar-survivor" class="project-link" target=”_blank”><i class="fab fa-itch-io"></i> Itch.io</a>
             </div>
             <div class="col-3">
                 <a href="https://www.facebook.com/StellarSurvivor/" class="project-link" target=”_blank”><i class="fab fa-facebook"></i> Facebook</a>
@@ -82,44 +95,45 @@
           </div>
         </div>
         <div class="col">
-          <div class="card slider">
-            <input type="radio" name="slide" id="img-1" checked>
-            <input type="radio" name="slide" id="img-2">
-            <input type="radio" name="slide" id="img-3">
-            <div class="img-box">
-              <img class="card-img-top" id="three" src="../../assets/images/StellarSurvivor/img3.png">
-              <img class="card-img-top" id="two" src="../../assets/images/StellarSurvivor/img2.png">
-              <img class="card-img-top" id="one" src="../../assets/images/StellarSurvivor/img1.png">
-            </div>
-            <div class="card-body text-center sliders">
-                <label for="img-1"><div id="dot-1" class="radio"></div></label>
-                <label for="img-2"><div id="dot-2" class="radio"></div></label>
-                <label for="img-3"><div id="dot-3" class="radio"></div></label>
+          <div class="card slider border-dark mb-3">
+            <div class="card-header">Screenshots</div>
+            <div class="card-body text-dark">
+              <input type="radio" name="slide" id="img-1" checked>
+              <input type="radio" name="slide" id="img-2">
+              <input type="radio" name="slide" id="img-3">
+              <div class="img-box">
+                <img class="card-img-top" id="three" src="../../assets/images/StellarSurvivor/img3.png">
+                <img class="card-img-top" id="two" src="../../assets/images/StellarSurvivor/img2.png">
+                <img class="card-img-top" id="one" src="../../assets/images/StellarSurvivor/img1.png">
+              </div>
+              <div class="text-center sliders">
+                  <label for="img-1"><div id="dot-1" class="radio"></div></label>
+                  <label for="img-2"><div id="dot-2" class="radio"></div></label>
+                  <label for="img-3"><div id="dot-3" class="radio"></div></label>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-3">
         <div class="col">
           <h1>Description</h1>
-          Stellar Survivor is a first-person, co-op photo-realistic survival game. Players fight off hordes of alien enemies that try to destroy the powercore. Players do so with the use of weapons with different characteristics and traps that, when put to good use, can take down these aliens effectively.
+          <p>Stellar Survivor is a first-person, co-op photo-realistic survival game. Players can play alone or together with friends on Steam to defend their powercore against waves of aliens. Players do so by the use of weapons and traps with different characteristics that when put to good use, can take down these aliens effectively.</p>
+          <p>For this project we had 4 working days per week for 1 school year. During the first block, or 8 weeks, I focused on designing the game conepts using pitches and meetings, and set up our build pipeline for Jenkins and Steam. The remaining months I worked on implementing GameSparks and SteamWorks for online matchmaking and user authentication, as well as actor and property replication. I was also part of a Stability/QA team focused on fixing crashes and bugs using Unreal Engine's crash dumps, navigating call stacks, and profiling tools.</p>
         </div>
-      </div>
-      <div class="row">
         <div class="col">
           <h1>My contributions</h1>
-          For this project we had 4 working days per week for 1 school year. During the first block, or 8 weeks, I focused on designing the game conepts using pitches and meetings, and set up our build pipeline for Jenkins and Steam.
-          The remaining months I worked on implementing GameSparks and SteamWorks for online matchmaking and user authentication, as well as actor and property replication. I was also part of a Stability/QA team focused on fixing crashes and bugs using Unreal Engine's crash dumps, navigating call stacks, and profiling tools.
+          <h5>Network engineering</h5>
           <div class="tab">
             <input id="tab-one" type="checkbox" name="tabs">
             <label for="tab-one">Multiplayer matchmaking</label>
             <div class="tab-content">
-              <p>Lobby, invites, listen server.</p>
+              <p>Lobby, invites.</p>
             </div>
           </div>
           <div class="tab">
             <input id="tab-two" type="checkbox" name="tabs">
-            <label for="tab-two">Multiplayer social interactions</label>
+            <label for="tab-two">Social interations</label>
             <div class="tab-content">
               <p>Chat, player names.</p>
             </div>
@@ -132,10 +146,26 @@
             </div>
           </div>
           <div class="tab">
+            <input id="tab-three" type="checkbox" name="tabs">
+            <label for="tab-three">Shooting</label>
+            <div class="tab-content">
+              <p>Previewing and spawning models.</p>
+            </div>
+          </div>
+          <h5>Gameplay</h5>
+          <div class="tab">
             <input id="tab-four" type="checkbox" name="tabs">
             <label for="tab-four">Enemy AI behavior</label>
             <div class="tab-content">
               <p>Enemy AIC, behaviour tree, blackboard.</p>
+            </div>
+          </div>
+          <h5>Quality Assurance</h5>
+          <div class="tab">
+            <input id="tab-five" type="checkbox" name="tabs">
+            <label for="tab-five">Profiling</label>
+            <div class="tab-content">
+              <p>Network profiler, stats.</p>
             </div>
           </div>
         </div>
