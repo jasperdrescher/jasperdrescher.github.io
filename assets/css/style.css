@@ -181,6 +181,7 @@ header .overlay:hover {
   margin-left: 10px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  user-select: none;
 }
 
 [type="checkbox"]:checked:hover + label:before,
@@ -407,10 +408,10 @@ header .overlay:hover {
   position: relative;
   margin-right: 5px;
   padding: 3px 6px 3px 6px;
-  cursor: pointer;
   line-height: 30px;
   font-size: 10px;
   text-transform: uppercase;
+  user-select: none;
   letter-spacing: 2px;
   font-weight: 400;
   color: #fff;
