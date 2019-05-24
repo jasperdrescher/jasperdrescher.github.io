@@ -36,42 +36,52 @@
         </li>
       </ul>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid mt-2">
       <div class="row">
-        <div class="col-sm">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QDxHViczsY8" allowfullscreen></iframe>
+        <div class="col">
+          <div class="card border-dark mb-3">
+            <div class="card-header">Trailer</div>
+            <div class="card-body text-dark">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QDxHViczsY8" allowfullscreen></iframe>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col">
-          <table class="table">
-            <tbody>
-              <tr>
-                <th scope="row">Roles</th>
-                <td>Engine Programmer & Scrum Master</td>
-              </tr>
-              <tr>
-                <th scope="row">Team</th>
-                <td><a href="../../index.html#godspeed">Godspeed</a></td>
-              </tr>
-              <tr>
-                <th scope="row">Release date</th>
-                <td>June 28 2018</td>
-              </tr>
-              <tr>
-                <th scope="row">Duration</th>
-                <td>February 2018 - May 2018</td>
-              </tr>
-              <tr>
-                <th scope="row">Platforms</th>
-                <td>Windows, PlayStation 4</td>
-              </tr>
-              <tr>
-                <th scope="row">Languages</th>
-                <td>C++, C#, Batch, CMake, GLTF</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="card border-dark mb-3">
+            <div class="card-header">Specifications</div>
+            <div class="card-body text-dark">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Roles</th>
+                    <td>Engine Programmer & Scrum Master</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Team</th>
+                    <td><a href="../../index.html#godspeed">Godspeed</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Release date</th>
+                    <td>June 28 2018</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Duration</th>
+                    <td>February 2018 - May 2018</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Platforms</th>
+                    <td>Windows, PlayStation 4</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Languages</th>
+                    <td>C++, C#, Batch, CMake, GLTF</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
           <div class="row justify-content-start">
             <div class="col-2">
               <a href="https://igad.itch.io/drivinity" class="project-link" target=”_blank”><i class="fab fa-itch-io"></i> Itch.io</a>
@@ -79,59 +89,71 @@
           </div>
         </div>
         <div class="col">
-          <div class="card slider">
-            <input type="radio" name="slide" id="img-1" checked>
-            <input type="radio" name="slide" id="img-2">
-            <input type="radio" name="slide" id="img-3">
-            <div class="img-box">
-              <img class="card-img-top" id="three" src="../../assets/images/StellarSurvivor/img3.png">
-              <img class="card-img-top" id="two" src="../../assets/images/StellarSurvivor/img2.png">
-              <img class="card-img-top" id="one" src="../../assets/images/StellarSurvivor/img1.png">
-            </div>
-            <div class="card-body text-center sliders">
+          <div class="card slider border-dark mb-3">
+            <div class="card-header">Screenshots</div>
+            <div class="card-body text-dark">
+              <input type="radio" name="slide" id="img-1" checked>
+              <input type="radio" name="slide" id="img-2">
+              <input type="radio" name="slide" id="img-3">
+              <div class="img-box">
+                <img class="card-img-top" id="three" src="../../assets/images/StellarSurvivor/img3.png">
+                <img class="card-img-top" id="two" src="../../assets/images/StellarSurvivor/img2.png">
+                <img class="card-img-top" id="one" src="../../assets/images/StellarSurvivor/img1.png">
+              </div>
+              <div class="text-center sliders">
                 <label for="img-1"><div id="dot-1" class="radio"></div></label>
                 <label for="img-2"><div id="dot-2" class="radio"></div></label>
                 <label for="img-3"><div id="dot-3" class="radio"></div></label>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-3">
         <div class="col">
           <h1>Description</h1>
-          Lux Engine is an cross-platform game racing game engine for Windows and PlayStation 4. It was developed during 8 weeks in my second year at Breda University of Applied Sciences, right before Drivinity.
+          <p>Lux Engine is a cross-platform 3D game engine with a a physically-based rendering pipeline tailored for anti-gravity racing games.</p>
+          <p>For this project we had 8 weeks at the near-end of my second year at Breda University of Applied Sciences, right before Drivinity. As an Engine & Tools Programmer my job was to develop the architecture of the object-oriented game engine, and to implement a physically based rendering pipeline with GLTF. I also managed the Scrum board and iterated on the design and implementation of most low-level architecture and classes. Other work, such as the renderer and custom memory allocator was done by fellow programming students.</p>
         </div>
-      </div>
-      <div class="row">
         <div class="col">
           <h1>My contributions</h1>
-          As an Engine & Tools Programmer my job was to develop the architecture of the object-oriented game engine, and to implement a physically based rendering pipeline with GLTF. I also managed the Scrum board and iterated on the design and implementation of most low-level architecture and classes. Other work, such as the renderer and custom memory allocator was done by fellow programming students.
+          <h5>Cross-platform input</h5>
           <div class="tab">
             <input id="tab-one" type="checkbox" name="tabs">
-            <label for="tab-one">Cross-platform input</label>
+            <label for="tab-one">Input manager</label>
             <div class="tab-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+              <p>Dualshock 4 and DXInput controller manager as well as keyboard.</p>
+            </div>
+          </div>
+          <h5>Cross-platform continuous build system</h5>
+          <div class="tab">
+            <input id="tab-two" type="checkbox" name="tabs">
+            <label for="tab-two">Build system</label>
+            <div class="tab-content">
+              <p>Jenkins nightly and hourly builds with polling. Post result to Slack.</p>
+            </div>
+          </div>
+          <h5>physically-based rendering pipeline</h5>
+          <div class="tab">
+            <input id="tab-four" type="checkbox" name="tabs">
+            <label for="tab-four">GLFT models</label>
+            <div class="tab-content">
+              <p>Early support for GLTF models and scenes using GitHub project.</p>
+            </div>
+          </div>
+          <h5>Scrum</h5>
+          <div class="tab">
+            <input id="tab-two" type="checkbox" name="tabs">
+            <label for="tab-two">JIRA board</label>
+            <div class="tab-content">
+              <p>JIRA tasks, sprints etc.</p>
             </div>
           </div>
           <div class="tab">
             <input id="tab-two" type="checkbox" name="tabs">
-            <label for="tab-two">Scrum</label>
+            <label for="tab-two">Stand-ups and retrospectives</label>
             <div class="tab-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-            </div>
-          </div>
-          <div class="tab">
-            <input id="tab-three" type="checkbox" name="tabs">
-            <label for="tab-three">Cross-platform continuous build system</label>
-            <div class="tab-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-            </div>
-          </div>
-          <div class="tab">
-            <input id="tab-four" type="checkbox" name="tabs">
-            <label for="tab-four">Physically based rendering pipeline</label>
-            <div class="tab-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+              <p>Sprints, meetings, planning etc.</p>
             </div>
           </div>
         </div>
