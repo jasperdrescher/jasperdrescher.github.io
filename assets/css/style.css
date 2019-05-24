@@ -32,8 +32,8 @@ a:hover {
 }
 
 img.thumbnail {
-  padding: .25rem;
-  max-width: 100%;
+  padding: .5rem;
+  max-width: 76px;
   height: auto;
 }
 
