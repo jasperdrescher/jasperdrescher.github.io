@@ -358,12 +358,14 @@ header .overlay:hover {
 
 /* Card */
 .card {
-  width: 18rem;
+  display: flex;
+  width: 28rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
   background: none;
   border-radius: 10px;
   box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .card .blue {
@@ -389,19 +391,6 @@ header .overlay:hover {
 .card .red {
   background: url("../images/bg-red.png") no-repeat center;
   background-size: 100%;
-}
-
-.card.default {
-  min-height: 140px;
-  max-height: calc(25% - 20px);
-  max-width: 100%;
-  min-width: calc(25% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 20px;
-  visibility: visible;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .card span {
@@ -439,18 +428,9 @@ header .overlay:hover {
 .card.csharp,
 .card.java,
 .card.javascript,
-.card.unity
+.card.unity,
 .card.unreal {
-  opacity: 0;
-  max-height: 0;
-  min-height: 0;
-  max-width: 0;
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  display: none;
 }
 
 .checkbox-cpp:checked ~ .card.cpp,
@@ -459,21 +439,10 @@ header .overlay:hover {
 .checkbox-javascript:checked ~ .card.javascript,
 .checkbox-unity:checked ~ .card.unity,
 .checkbox-unreal:checked ~ .card.unreal {
-  opacity: 1;
-  min-height: 140px;
-  max-height: calc(25% - 20px);
-  max-width: 100%;
-  min-width: calc(25% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 20px;
-  visibility: visible;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  display: flex;
 }
 
 @media (max-width: 1199px) {
-  .card.default,
   .checkbox-cpp:checked ~ .card.cpp,
   .checkbox-csharp:checked ~ .card.csharp,
   .checkbox-java:checked ~ .card.java,
@@ -485,7 +454,6 @@ header .overlay:hover {
 }
 
 @media (max-width: 991px) {
-  .card.default,
   .checkbox-cpp:checked ~ .card.cpp,
   .checkbox-csharp:checked ~ .card.csharp,
   .checkbox-java:checked ~ .card.java,
@@ -497,7 +465,6 @@ header .overlay:hover {
 }
 
 @media (max-width: 575px) {	
-  .card.default,
   .checkbox-cpp:checked ~ .card.cpp,
   .checkbox-csharp:checked ~ .card.csharp,
   .checkbox-java:checked ~ .card.java,
