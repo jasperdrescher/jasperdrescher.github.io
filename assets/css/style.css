@@ -35,6 +35,47 @@ img.thumbnail {
   height: auto;
 }
 
+/* Tooltip */
+.ctooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ctooltip .tooltipbottom {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.ctooltip .tooltiptop {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.ctooltip:hover .tooltipbottom, .ctooltip:hover .tooltiptop {
+  visibility: visible;
+}
+
 /* Navbar */
 nav {
   background-color: #1f2029;
