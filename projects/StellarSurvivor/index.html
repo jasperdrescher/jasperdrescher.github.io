@@ -165,7 +165,18 @@
             <input id="tab-six" type="checkbox" name="tabs">
             <label for="tab-six">Profiling</label>
             <div class="tab-content">
-              <p>Network profiler, stats.</p>
+              <img src="../../assets/images/StellarSurvivor/qa2.png" class="rounded screenshot float-left">
+              <p>
+                My first task as QA programmer was to analyse our game's network performance using Unreal Engine's <a href="https://docs.unrealengine.com/en-us/Gameplay/Tools/NetworkProfiler">.NET network profiler</a>.
+                By recording a few online multiplayer samples of about 5 minutes, I figured out that a few actors (game objects) were replicated either too frequently or had unnecessary network replication. I then implemented different settings, such as net work culling distances and RPC's to replace the slower methods.
+                A few times this also meant that we had to move even systems, such as an enemy wave spawner, to the server, or simply make them local. I also looked into a replication graph to optimize network performance, although this wasn't necessary after the level was reduced in size by design.
+                The profiler tool was also used to analyse packet loss and track which events had to be marked as reliable, meaning the server would fire an event until it arrives at the client smoothly.
+              </p>
+              <img src="../../assets/images/StellarSurvivor/qa1.png" class="rounded screenshot float-right">
+              <p>
+                I also had to optimize our game throughout development by analysing the frame times and tickrates using Unreal Engine's <a href="https://docs.unrealengine.com/en-us/Engine/Performance/StatCommands">stat commands</a>.
+                By using this tool I managed to find numerous bugs, such as an asynchronous event to retrieve texture data being continuously called. Some bug fixes reduced our frame times from 200 ms to 18 ms.
+              </p>
             </div>
           </div>
         </div>

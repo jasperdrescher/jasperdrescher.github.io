@@ -607,10 +607,6 @@ header .overlay:hover {
   transition: max-height .35s;
 }
 
-.tab-content p {
-  margin: 1em;
-}
-
 .tab input:checked ~ .tab-content {
   max-height: 100vh;
 }
@@ -642,4 +638,9 @@ header .overlay:hover {
 
 .tab label:after {
   transform: rotate(-180deg);
+}
+
+/* Other */
+img.screenshot {
+  margin: 5px;
 }
