@@ -45,62 +45,95 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid mt-2">
       <div class="row">
-        <div class="col-sm">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hUSndXe6-hY" allowfullscreen></iframe>
+        <div class="col">
+          <div class="card border-dark mb-3">
+            <div class="card-header">Trailer</div>
+            <div class="card-body text-dark">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hUSndXe6-hY" allowfullscreen></iframe>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col">
-          <table class="table">
-            <tbody>
-              <tr>
-                <th scope="row">Role</th>
-                <td>Gameplay Programmer</td>
-              </tr>
-              <tr>
-                <th scope="row">Team</th>
-                <td><a href="../../index.html#howdini">Howdini</a></td>
-              </tr>
-              <tr>
-                <th scope="row">Release date</th>
-                <td>January 28 2018</td>
-              </tr>
-              <tr>
-                <th scope="row">Duration</th>
-                <td>January 26 2018 - January 28 2018</td>
-              </tr>
-              <tr>
-                <th scope="row">Engine</th>
-                <td>Unreal Engine</td>
-              </tr>
-              <tr>
-                <th scope="row">Platform</th>
-                <td>Windows</td>
-              </tr>
-              <tr>
-                <th scope="row">Language</th>
-                <td>C++</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="card border-dark mb-3">
+            <div class="card-header">Specifications</div>
+            <div class="card-body text-dark">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Role</th>
+                    <td>Gameplay Programmer</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Team</th>
+                    <td><a href="../../index.html#howdini">Howdini</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Release date</th>
+                    <td>January 28 2018</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Duration</th>
+                    <td>January 26 2018 - January 28 2018</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Engine</th>
+                    <td>Unreal Engine</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Platform</th>
+                    <td>Windows</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Language</th>
+                    <td>C++</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         </div>
+         <div class="row justify-content-start">
+          <div class="col-2">
+            <a href="https://igad.itch.io/flux" class="project-link" target=”_blank”><i class="fab fa-itch-io"></i> Itch.io</a>
+          </div>
+          <div class="col-4">
+            <a href="https://globalgamejam.org/2018/games/f-l-u-x" class="project-link" target=”_blank”><i class="fas fa-globe-americas"></i> Global Game Jam</a>
+          </div>
+          <div class="col-2">
+            <a href="https://github.com/TeamHowdini/GlobalGameJam2018_V2" class="project-link" target=”_blank”><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card slider border-dark mb-3">
+          <div class="card-header">Screenshots</div>
+          <div class="card-body text-dark">
+            <input type="radio" name="slide" id="img-1" checked>
+            <input type="radio" name="slide" id="img-2">
+            <input type="radio" name="slide" id="img-3">
+            <div class="img-box">
+              <img class="card-img-top" id="three" src="../../assets/images/StellarSurvivor/img3.png">
+              <img class="card-img-top" id="two" src="../../assets/images/StellarSurvivor/img2.png">
+              <img class="card-img-top" id="one" src="../../assets/images/StellarSurvivor/img1.png">
+            </div>
+            <div class="text-center sliders">
+              <label for="img-1"><div id="dot-1" class="radio"></div></label>
+              <label for="img-2"><div id="dot-2" class="radio"></div></label>
+              <label for="img-3"><div id="dot-3" class="radio"></div></label>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
+      <div class="row mt-3">
         <div class="col">
           <h1>Description</h1>
-          Flux is a 4 player party game in which you play as a transcendent crystal being with the power to telepathically move objects around you. The player has to use his telepathic powers to lift and throw objects in the arena to the other players and be the last man standing. The player has the ability to stop any incoming threats by timing his powers, giving the objects extra speed on his next throw.
+          <p>Flux is a 4 player party game in which you play as a transcendent crystal being with the power to telepathically move objects around you. The player has to use his telepathic powers to lift and throw objects in the arena to the other players and be the last man standing. The player has the ability to stop any incoming threats by timing his powers, giving the objects extra speed on his next throw.</p>
+          <p>For this project we had 48 during the Global Game Jam 2018. I focused on getting the player camera and controller functioning in local co-op with multiple players, as well as post-launch updates to make the Itch.io release playable in singeplayer. I made small changes in blueprints to fix the telekenisis mechanic and visual effects. I also managed the Git repository using Git Bash and branches, because we had lots of merge conflicts during the first few hours in such a large team.</p>
         </div>
-        <div class="col">
-          <a href="https://igad.itch.io/flux" class="project-link" target=”_blank”><i class="fab fa-itch-io"></i> Itch.io</a>
-          <a href="https://globalgamejam.org/2018/games/f-l-u-x" class="project-link" target=”_blank”><i class="fas fa-globe-americas"></i> Global Game Jam</a>
-          <a href="https://github.com/TeamHowdini/GlobalGameJam2018_V2" class="project-link" target=”_blank”><i class="fab fa-github"></i> GitHub</a>
-        </div>
-      </div>
-      <div class="row">
         <div class="col">
           <h1>My contributions</h1>
           <div class="tab">
