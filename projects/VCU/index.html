@@ -45,64 +45,88 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid mt-2">
       <div class="row">
-        <div class="col-sm">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <div class="col">
+          <div class="card border-dark mb-3">
+            <div class="card-header">Trailer</div>
+            <div class="card-body text-dark">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/z4-2rT5_fAA" allowfullscreen></iframe>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col">
-          <table class="table">
-            <tbody>
-              <tr>
-                <th scope="row">Role</th>
-                <td>Asset Programmer</td>
-              </tr>
-              <tr>
-                <th scope="row">Release date</th>
-                <td>April 10 2017</td>
-              </tr>
-              <tr>
-                <th scope="row">Duration</th>
-                <td>April 2017 - present</td>
-              </tr>
-              <tr>
-                <th scope="row">Engine</th>
-                <td>Unity</td>
-              </tr>
-              <tr>
-                <th scope="row">Platform</th>
-                <td>Windows</td>
-              </tr>
-              <tr>
-                <th scope="row">Language</th>
-                <td>C#</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="card border-dark mb-3">
+            <div class="card-header">Specifications</div>
+            <div class="card-body text-dark">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Role</th>
+                    <td>Asset Developer</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Duration</th>
+                    <td>April 2017 - present</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Engine</th>
+                    <td>Unity</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Platform</th>
+                    <td>Windows</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Language</th>
+                    <td>C#</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>          
+          <div class="row justify-content-start">
+            <div class="col-4">
+              <a href="https://assetstore.unity.com/packages/tools/camera/virtual-cameras-for-unity-86138" class="project-link" target=”_blank”><i class="fas fa-store"></i> Unity Asset Store</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card slider border-dark mb-3">
+            <div class="card-header">Screenshots</div>
+            <div class="card-body text-dark">
+              <input type="radio" name="slide" id="img-1" checked>
+              <input type="radio" name="slide" id="img-2">
+              <input type="radio" name="slide" id="img-3">
+              <div class="img-box">
+                <img class="card-img-top" id="three" src="../../assets/images/VCU/img3.png">
+                <img class="card-img-top" id="two" src="../../assets/images/VCU/img2.png">
+                <img class="card-img-top" id="one" src="../../assets/images/VCU/img1.png">
+              </div>
+              <div class="text-center sliders">
+                <label for="img-1"><div id="dot-1" class="radio"></div></label>
+                <label for="img-2"><div id="dot-2" class="radio"></div></label>
+                <label for="img-3"><div id="dot-3" class="radio"></div></label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>Description</h1>
-          This Unity asset package contains some of the most used camera controllers in games. All scripts are written in C# and are easy to adjust using the inspector.
-        </div>
-        <div class="col">
-          <a href="https://assetstore.unity.com/packages/tools/camera/virtual-cameras-for-unity-86138" class="project-link" target=”_blank”><i class="fas fa-external-link-alt"></i> Unity Asset Store</a>
-          <a href="https://github.com/JasperDre/Virtual-Cameras-for-Unity-Lite" class="project-link" target=”_blank”><i class="fab fa-github"></i> GitHub</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h1>My contributions</h1>
-          <div class="tab">
-            <input id="tab-one" type="checkbox" name="tabs">
-            <label for="tab-one">Cameras</label>
-            <div class="tab-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+        <div class="row mt-3">
+          <div class="col">
+            <h1>Description</h1>
+            <p>This Unity asset package contains some of the most used camera controllers in games. All scripts are written in C# and are easy to adjust using the inspector.</p>
+          </div>
+          <div class="col">
+            <h1>My contributions</h1>
+            <div class="tab">
+              <input id="tab-one" type="checkbox" name="tabs">
+              <label for="tab-one">Cameras</label>
+              <div class="tab-content">
+                a
+              </div>
             </div>
           </div>
         </div>
