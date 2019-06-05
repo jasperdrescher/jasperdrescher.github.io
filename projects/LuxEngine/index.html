@@ -22,6 +22,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css">
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
     <nav class="navbar navbar-expand-md sticky">
@@ -60,7 +65,7 @@
                   </tr>
                   <tr>
                     <th scope="row">Team</th>
-                    <td><a href="../../index.html#godspeed">Godspeed</a></td>
+                    <td><a href="../../index.html#godspeed">Godspeed</a> 9 students</td>
                   </tr>
                   <tr>
                     <th scope="row">Release date</th>
@@ -113,11 +118,70 @@
         <div class="col">
           <h1>Description</h1>
           <p>Lux Engine is a cross-platform 3D game engine with a a physically-based rendering pipeline tailored for anti-gravity racing games.</p>
-          <p>For this project we had 8 weeks at the near-end of my second year at Breda University of Applied Sciences, right before Drivinity. As an Engine & Tools Programmer my job was to develop the architecture of the object-oriented game engine, and to implement a physically based rendering pipeline with GLTF. I also managed the Scrum board and iterated on the design and implementation of most low-level architecture and classes. Other work, such as the renderer and custom memory allocator was done by fellow programming students.</p>
+          <p>For this project we had 8 weeks at the near-end of my second year at Breda University of Applied Sciences, right before Drivinity. As an Engine & Tools Programmer my job was to develop the architecture of the object-oriented game engine, and to implement a physically based rendering pipeline with GLTF. I also managed the Scrum board and iterated on the design and implementation of most low-level architecture and classes. Other work, such as the renderer and custom memory allocator was done by fellow programming students.
+            Our goal was to develop a cross-platform game engine targeting PlayStation and Windows.
+          </p>
         </div>
         <div class="col">
           <h1>My contributions</h1>
-          <h5 class="mt-3">Cross-platform input</h5>
+          <h5 class="mt-3">Cross-platform device input</h5>
+          I developed a cross-platform input system that supports Dualshock 4 for ORBIS/PlayStation4 and DirectInput for controllers and keyboards for DirectX/Windows.
+          <h6 class="mt-3">Cross-platform device input</h6>
+          <div class="tab">
+            <input id="tab-one" type="checkbox" name="tabs">
+            <label for="tab-one">Polling for device updates</label>
+            <div class="tab-content">
+              <p>Polling for device input and connection.</p>
+<pre><code class="cpp">uint32_t Input::Update()
+{
+  m_pJoystick->Acquire();
+  int32_t result = m_pJoystick->Poll();
+  if (result < 0)
+  {
+      printf_s("Missing device: %d", result);
+      return LUX_OK;
+  }
+  
+  // Convert from (0,255) output to (-1,1)
+  float leftX = ((uint8_t)joystate.lX * 2 - 255) * m_MaxByteAsFloat;
+
+  // Adjust for deadzones
+  if (fabsf(leftX) < m_Controller.m_AnalogDeadZone)
+  {
+      m_Controller.m_LeftStick.m_X = 0.0f;
+  }
+  else
+  {
+      m_Controller.m_LeftStick.m_X = leftX;
+  }
+
+  if (0x00 != (0x80 & joystate.rgbButtons[9]))
+  {
+      m_Controller.m_Buttons |= Button_Select;
+  }
+
+  // Detect button changes using XOR and AND gates
+  uint32_t buttonChanges = m_Controller.m_Buttons ^ m_Controller.m_PreviousButtons;
+  m_Controller.m_ButtonsDown = buttonChanges & m_Controller.m_Buttons;
+  m_Controller.m_ButtonsUp = buttonChanges & (~m_Controller.m_Buttons);
+  m_Controller.m_PreviousButtons = m_Controller.m_Buttons;
+
+  return LUX_OK;
+}</code></pre>
+            </div>
+          </div>
+          <div class="tab">
+              <input id="tab-two" type="checkbox" name="tabs">
+              <label for="tab-two">Getting key states</label>
+              <div class="tab-content">
+                <p>Polling for device input and connection.</p>
+<pre><code class="cpp">bool Input::IsButtonDown(const EButton& a_Button)
+{
+  return ((m_Controller.m_Buttons & a_Button) != 0);
+}</code></pre>
+              </div>
+            </div>
+
           <div class="tab">
             <input id="tab-one" type="checkbox" name="tabs">
             <label for="tab-one">Input manager</label>
