@@ -640,7 +640,16 @@ header .overlay:hover {
   transform: rotate(-180deg);
 }
 
-/* Other */
+/* Screenshots */
 img.screenshot {
   margin: 5px;
+}
+
+/* Code */
+pre {
+  max-width: 100vh;
+}
+
+code {
+  overflow: scroll;
 }
