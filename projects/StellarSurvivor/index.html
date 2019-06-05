@@ -194,7 +194,35 @@
                 <label for="tab-three">Steam friends</label>
                 <div class="tab-content">
                   <img src="../../assets/images/StellarSurvivor/om1.png" class="rounded screenshot float-left">
-                  <p>I worked on creating a system through the GameInstance and Online Friends Interface in Unreal Engine 4, to read the friendslist of a player. The player can then invite or join the friend if they are in-game.</p>
+                  <p>I worked on creating a system through the GameInstance and Online Friends Interface in Unreal Engine 4, to read the friendslist of a player. The player can then invite or join the friend if they are in-game.
+                    Because the unique ID that is required to manage online identities in Unreal Engine is abstracted, I added a custom struct that can be used in Blueprints by designers. By also adding extra information such as online status and player name, it became really easy to display and interact with custom PlayerInfo.
+                    Whenever a friend is displayed we use a UMG widget that references a list of friends from the GameInstance, which polls for Steam friends using C++ delegates.
+                  </p>
+<pre><code class="cpp">USTRUCT(BlueprintType)
+struct FBPUniqueNetId
+{
+  GENERATED_USTRUCT_BODY()
+
+public:
+  TSharedPtr<const FUniqueNetId> UniqueNetId;
+
+  void SetUniqueNetId(const TSharedPtr<const FUniqueNetId> &arg_NetId)
+  {
+    UniqueNetId = arg_NetId;
+  }
+
+  const FUniqueNetId* GetUniqueNetId() const
+  {
+    if (UniqueNetId.IsValid())
+    {
+      return UniqueNetId.Get();
+    }
+    else
+    {
+      return nullptr;
+    }
+  }
+};</code></pre>            
                 </div>
               </div>
               <div class="tab">
