@@ -283,8 +283,7 @@ header .overlay:hover {
   border: 1px solid #2980b9;
 }
 
-.checkbox-cpp:checked + label:after,
-.checkbox-cpp:not(:checked) + label:after {
+.checkbox-cpp:not(:checked) + label:before {
   background-color: #2980b9;
 }
 
@@ -292,28 +291,8 @@ header .overlay:hover {
 .checkbox-csharp:not(:checked) + label:before {
   border: 1px solid #2980b9;
 }
-.checkbox-csharp:checked + label:after,
-.checkbox-csharp:not(:checked) + label:after {
-  background-color: #2980b9;
-}
 
-.checkbox-java:checked + label:before,
-.checkbox-java:not(:checked) + label:before {
-  border: 1px solid #2980b9;
-}
-
-.checkbox-java:checked + label:after,
-.checkbox-java:not(:checked) + label:after {
-  background-color: #2980b9;
-}
-
-.checkbox-javascript:checked + label:before,
-.checkbox-javascript:not(:checked) + label:before {
-  border: 1px solid #2980b9;
-}
-
-.checkbox-javascript:checked + label:after,
-.checkbox-javascript:not(:checked) + label:after {
+.checkbox-csharp:not(:checked) + label:before {
   background-color: #2980b9;
 }
 
@@ -323,8 +302,7 @@ header .overlay:hover {
   border: 1px solid #28b938;
 }
 
-.checkbox-unity:checked + label:after,
-.checkbox-unity:not(:checked) + label:after {
+.checkbox-unity:not(:checked) + label:before {
   background-color: #28b938;
 }
 
@@ -333,8 +311,7 @@ header .overlay:hover {
   border: 1px solid #28b938;
 }
 
-.checkbox-unreal:checked + label:after,
-.checkbox-unreal:not(:checked) + label:after {
+.checkbox-unreal:not(:checked) + label:before {
   background-color: #28b938;
 }
 
@@ -344,8 +321,7 @@ header .overlay:hover {
   border: 1px solid #e74c3c;
 }
 
-.checkbox-git:checked + label:after,
-.checkbox-git:not(:checked) + label:after {
+.checkbox-git:not(:checked) + label:before {
   background-color: #e74c3c;
 }
 
@@ -354,8 +330,7 @@ header .overlay:hover {
   border: 1px solid #e74c3c;
 }
 
-.checkbox-perforce:checked + label:after,
-.checkbox-perforce:not(:checked) + label:after {
+.checkbox-perforce:not(:checked) + label:before {
   background-color: #e74c3c;
 }
 
@@ -364,8 +339,7 @@ header .overlay:hover {
   border: 1px solid #e74c3c;
 }
 
-.checkbox-jira:checked + label:after,
-.checkbox-jira:not(:checked) + label:after {
+.checkbox-jira:not(:checked) + label:before {
   background-color: #e74c3c;
 }
 
@@ -375,8 +349,7 @@ header .overlay:hover {
   border: 1px solid #9728b9;
 }
 
-.checkbox-windows:checked + label:after,
-.checkbox-windows:not(:checked) + label:after {
+.checkbox-windows:not(:checked) + label:before {
   background-color: #9728b9;
 }
 
@@ -385,8 +358,7 @@ header .overlay:hover {
   border: 1px solid #9728b9;
 }
 
-.checkbox-playstation:checked + label:after,
-.checkbox-playstation:not(:checked) + label:after {
+.checkbox-playstation:not(:checked) + label:before {
   background-color: #9728b9;
 }
 
@@ -395,8 +367,7 @@ header .overlay:hover {
   border: 1px solid #9728b9;
 }
 
-.checkbox-android:checked + label:after,
-.checkbox-android:not(:checked) + label:after {
+.checkbox-android:not(:checked) + label:before {
   background-color: #9728b9;
 }
 
@@ -475,20 +446,16 @@ header .overlay:hover {
 
 .card.cpp,
 .card.csharp,
-.card.java,
-.card.javascript,
 .card.unity,
 .card.unreal {
-  display: none;
+  display: flex;
 }
 
 .checkbox-cpp:checked ~ .card.cpp,
 .checkbox-csharp:checked ~ .card.csharp,
-.checkbox-java:checked ~ .card.java,
-.checkbox-javascript:checked ~ .card.javascript,
 .checkbox-unity:checked ~ .card.unity,
 .checkbox-unreal:checked ~ .card.unreal {
-  display: flex;
+  display: none;
 }
 
 @media (max-width: 1199px) {
