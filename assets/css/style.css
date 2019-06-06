@@ -6,8 +6,8 @@ body {
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1.7;
-	color: #c4c3ca;
-	background-color: #1f2029;
+  color: #fff;
+  background-color: #1f2029;
 	overflow-x: hidden;
 }
 
@@ -221,27 +221,27 @@ header .overlay:hover {
 }
 
 .card .blue {
-  background: url("../images/bg-blue.png") no-repeat center;
+  background: url("../images/Backgrounds/bg-blue.png") no-repeat center;
   background-size: 100%;
 }
 
 .card .brown {
-  background: url("../images/bg-brown.png") no-repeat center;
+  background: url("../images/Backgrounds/bg-brown.png") no-repeat center;
   background-size: 100%;
 }
 
 .card .green {
-  background: url("../images/bg-green.png") no-repeat center;
+  background: url("../images/Backgrounds/bg-green.png") no-repeat center;
   background-size: 100%;
 }
 
 .card .pink {
-  background: url("../images/bg-pink.png") no-repeat center;
+  background: url("../images/Backgrounds/bg-pink.png") no-repeat center;
   background-size: 100%;
 }
 
 .card .red {
-  background: url("../images/bg-red.png") no-repeat center;
+  background: url("../images/Backgrounds/bg-red.png") no-repeat center;
   background-size: 100%;
 }
 
@@ -378,18 +378,17 @@ header .overlay:hover {
 }
 
 .tab label:after {
-  content: "\f3d0";
-  font-family: IonIcons;
+  content: "\2193";
   font-size: 1.2em;
   float: right;
   position: relative;
   top: -2px;
   transition: .3s all;
-  transform: rotate(0deg);
+  transform: rotate(-180deg);
 }
 
-.tab label:after {
-  transform: rotate(-180deg);
+.tab:hover label:after {
+  transform: rotate(0deg);
 }
 
 /* Screenshots */
