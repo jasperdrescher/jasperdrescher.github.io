@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Dev</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            background-color: #26262b;
+        }
+
+        .branding { 
+            background: url('../assets/images/Branding/waves.png') bottom no-repeat;
+            position: relative;
+            height: 74vh;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .branding .key {
+            width: 20px;
+        }
+
+        .branding .coin {
+            animation-name: float-coin;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1.5s;
+        }
+
+        .branding .showreel {
+            position: relative;
+            float: right;
+            margin-right: 5%;
+            width: 20vw;
+            height: 20vw;
+        }
+
+        .branding .showreel img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .branding .showreel video {
+            position: absolute;
+            top: 12.1%; /* calculate me tx */
+            left: 2.5%;
+            width: 95%;
+            height: 53.4%;
+            z-index: 5;
+        }
+
+        @keyframes float-coin {
+            0% {
+                transform: translate3d(0,-4px,0);
+            }
+
+            100% {
+                transform: translate3d(0,4px,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="branding">
+        <img class="coin" src="../assets/images/Branding/coin.svg" width="40px" style="margin: 5% 0 0 5%;">
+        <img class="key" src="../assets/images/Branding/cross.svg" width="40px" style="margin: 5% 0 0 5%;">
+        <img class="key" src="../assets/images/Branding/square.svg" width="40px" style="margin: 5% 0 0 5%;">
+        <img class="key" src="../assets/images/Branding/triangle.svg" width="40px" style="margin: 5% 0 0 5%;">
+        <img class="key" src="../assets/images/Branding/circle.svg" width="40px" style="margin: 5% 0 0 5%;">
+        <div class="showreel">
+            <img src="../assets/images/Branding/desktop.svg">
+            <video controls autoplay>
+                <source src="../assets/videos/showreel.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+</html>
