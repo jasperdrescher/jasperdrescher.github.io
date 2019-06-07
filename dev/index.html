@@ -29,6 +29,14 @@
             animation-duration: 1.5s;
         }
 
+        .branding .block {
+            animation-name: float-block;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1.8s;
+        }
+
         .branding .showreel {
             position: relative;
             float: right;
@@ -37,9 +45,17 @@
             height: 20vw;
         }
 
-        .branding .showreel img {
+        .branding .showreel .desktop {
             width: 100%;
             height: 100%;
+        }
+
+        .branding .showreel .controller {
+            position: absolute;
+            width: 100px;
+            bottom: 0;
+            right: 5%;
+            z-index: 2;
         }
 
         .branding .showreel video {
@@ -60,20 +76,34 @@
                 transform: translate3d(0, 4px, 0);
             }
         }
+
+        @keyframes float-block {
+            0% {
+                transform: translate3d(0, -4px, 0);
+            }
+
+            100% {
+                transform: translate3d(0, 4px, 0);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="branding">
         <img class="coin" src="../assets/images/Branding/coin.svg" width="40px" style="margin: 5% 0 0 5%;">
+        <img class="block" src="../assets/images/Branding/block.svg" width="40px" style="margin: 5% 0 0 5%;">
         <img class="key" src="../assets/images/Branding/cross.svg" width="40px" style="margin: 5% 0 0 5%;">
         <img class="key" src="../assets/images/Branding/square.svg" width="40px" style="margin: 5% 0 0 5%;">
         <img class="key" src="../assets/images/Branding/triangle.svg" width="40px" style="margin: 5% 0 0 5%;">
         <img class="key" src="../assets/images/Branding/circle.svg" width="40px" style="margin: 5% 0 0 5%;">
         <div class="showreel">
-            <img src="../assets/images/Branding/desktop.svg">
-            <video autoplay loop>
-                <source src="../assets/videos/showreel.mp4" type="video/mp4">
-            </video>
+            <img class="desktop" src="../assets/images/Branding/desktop.svg">
+            <img class="controller" src="../assets/images/Branding/controller.svg">
+            <a href="#">
+                <video autoplay loop>
+                    <source src="../assets/videos/showreel.mp4" type="video/mp4">
+                </video>
+            </a>
         </div>
     </div>
 </body>
