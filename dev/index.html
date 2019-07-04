@@ -3,6 +3,7 @@
     <title>Dev</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
         html, body {
@@ -10,44 +11,12 @@
             color: #fff;
             padding: 0;
             margin: 0;
-            height: 100%;
             background-color: #26262b;
         }
 
         .branding { 
-            background: url('../assets/images/Branding/pattern.png') bottom no-repeat;
-            position: relative;
-            height: 74vh;
-            width: 100%;
-            display: inline-block;
-        }
-
-        .branding .text {
-            position: absolute;
-            z-index: 3;
-            width: auto;
-            float: left;
-            margin-left: 5%;
-            margin-top: 5%;
-        }
-
-        .branding .title {
-            display: block;
-            font-size: 4rem;
-        }
-
-        .branding .description {
-            color: hsla(0,0%,100%,.6);
-            font-size: 1.2rem;
-            display: block;
-            text-transform: none;
-        }
-
-        .branding .waves {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            z-index: 1;
+            background: url('../assets/images/branding/header.png') no-repeat;
+            height: 100%;
         }
 
         .branding .coin {
@@ -123,8 +92,16 @@
     </style>
 </head>
 <body>
+    <div class="container-fluid branding">
+        <div class="row">
+            <div class="col">
+            <h1>Jasper Drescher</h1>
+            Gameplay & tools programmer
+            </div>
+        </div>
+    </div>
+    <!--
     <div class="branding">
-        <img class="waves" src="../assets/images/Branding/waves.png">
         <img class="coin" src="../assets/images/Branding/coin.svg" width="40px" style="margin: 5% 0 0 5%;">
         <img class="block" src="../assets/images/Branding/block.svg" width="40px" style="margin: 5% 0 0 5%;">
         <img class="bomb" src="../assets/images/Branding/bomb.svg" width="40px" style="margin: 5% 0 0 5%;">
@@ -133,15 +110,7 @@
             <span class="title">Jasper Drescher</span>
             <span class="description">Gameplay & tools programmer</span>
         </div>
-        <div class="showreel">
-            <img class="desktop" src="../assets/images/Branding/desktop.svg">
-            <img class="controller" src="../assets/images/Branding/controller.svg">
-            <a href="#">
-                <video autoplay loop>
-                    <source src="../assets/videos/showreel.mp4" type="video/mp4">
-                </video>
-            </a>
-        </div>
     </div>
+    -->
 </body>
 </html>
