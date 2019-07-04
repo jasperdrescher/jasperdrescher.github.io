@@ -220,6 +220,11 @@ header .overlay:hover {
   box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
 }
 
+.card.grid.highlight {
+  background: rgb(75,108,183);
+  background: linear-gradient(145deg, rgba(75,108,183,0.5) 0%, rgba(24,40,72,0.5) 100%);
+}
+
 .card .blue {
   background: url("../images/Backgrounds/bg-blue.png") no-repeat center;
   background-size: 100%;
