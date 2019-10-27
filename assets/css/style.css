@@ -11,11 +11,11 @@
 html, body {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
-    background: #ddeef7;
+    background: #ffffff;
 }
 
 a {
@@ -139,9 +139,8 @@ a {
 /* Grid */
 
 .grid {
-    display: grid;
-    height: auto;
     display: flex;
+    height: auto;
     grid-template-columns: auto;
     grid-template-rows: auto;
 }
@@ -149,8 +148,6 @@ a {
 .tile {
     position: relative;
     display: inline-block;
-    --headline: #3F4656;
-    --text: #99A3BA;
     margin: 5px;
     background: #fff;
     border-radius: 9px;
@@ -173,7 +170,7 @@ a {
     font-size: 24px;
     font-weight: 700;
     margin: 0;
-    color: var(--headline);
+    color: #3F4656;
 }
 
 .tile .banner .logos {
@@ -259,6 +256,10 @@ a {
     color: #5ad644;
 }
 
+.superplumberworld:hover .engine {
+    display: inline-block;
+}
+
 .superplumberworld .banner {
     background-image: url('../images/super-plumber-world/thumbnail.jpg');
     background-size: cover;
@@ -266,7 +267,72 @@ a {
     background-position: center;
 }
 
+.opening {
+    width: 100%;
+    display: inline-grid;
+    padding: 15px;
+    position: relative;
+}
+
+.opening .title .gameplay {
+    display: none;
+}
+
+.opening .title .engine {
+    display: none;
+}
+
+.opening a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.opening a:hover {
+    color: #f2704d;
+    text-decoration: none;
+}
+
+.name {
+    font-weight: 700;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.description {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.66667rem;
+    line-height: 2.33333rem;
+    color: #292a2c;
+}
+
+.education {
+    font-weight: 400;
+    color: rgb(74, 74, 74);
+    font-size: 0.777778rem;
+    line-height: 1.7777777777778;
+}
+
+.experience {
+    font-weight: 400;
+    color: rgb(74, 74, 74);
+    font-size: 0.777778rem;
+    line-height: 1.7777777777778;
+}
+
+.portfolio {
+    padding: 15px;
+}
+
+.résumé {
+    padding: 15px;
+}
+
 /* Colors */
+
+.text-white {
+    color: #ffffff;
+}
 
 .text-orange {
     color: #f2704d;
