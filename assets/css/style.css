@@ -77,7 +77,7 @@ a {
   background-color: lightgrey;
 }
 
-.p-sm a:hover>i {
+.p-sm a:hover > i {
   color: #3498db;
 }
 
@@ -92,31 +92,31 @@ a {
 }
 
 .info {
-  margin: 50px 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
 
 .info > .block {
-  width: 400px;
+  text-align: center;
+  padding: 24px 0px;
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 15px;
 }
 
 .projects a {
   font-size: large;
   font-weight: 600;
   padding: 24px;
-  margin: 5px;
   color: white;
 }
 
 .projects span {
-    display: block;
+  display: block;
 }
 
 .tctd2 {
