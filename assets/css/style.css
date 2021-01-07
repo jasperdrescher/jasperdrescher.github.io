@@ -1,133 +1,135 @@
 /* Generic */
 * {
-    box-sizing: border-box;
-  }
-  
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  html,
-  body {
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    background: #f1f1f1;
-    color: #333333;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  /* Custom */
-  .about {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    overflow: hidden;
-    padding: 40px;
-    transition: 0.4s;
-    text-align: center;
-  }
-  
-  .p-name {
-    margin: 12px 0;
-    text-transform: uppercase;
-  }
-  
-  .p-description {
-    font-style: italic;
-    color: #3498db;
-  }
-  
-  .p-sm {
-    margin-top: 25px;
-  }
-  
-  .p-sm a {
-    display: inline-block;
-    padding: 18px;
-    transition: 0.6s;
-    text-align: center;
-  }
-  
-  .p-sm a:hover {
-    transform: scale(1.25);
-    background-color: lightgrey;
-  }
-  
-  .p-sm a:hover>i {
-    color: #3498db;
-  }
-  
-  .p-sm a i {
-    color: #333333;
-    line-height: 30px;
-  }
-  
-  .card {
-    border-radius: 0.12em;
-    box-shadow: 0 0.9em 1.4em rgba(0, 0, 0, 0.25), 0 0.25em 0.5em rgba(0, 0, 0, 0.22);
-  }
-  
-  .info {
-    margin: 50px 0;
-    display: flex;
-    justify-content: space-between;
-  }
+  box-sizing: border-box;
+}
 
-  .info > .block {
-      width: 400px;
-  }
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  .projects {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-  }
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+  color: #333333;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
 
-  .projects a {
-    padding: 24px;
-    margin: 5px;
-      color: white;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  .projects span {
-      display: block;
-  }
+/* Custom */
+.about {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 40px;
+  transition: 0.4s;
+  text-align: center;
+}
 
-  .tctd2 {
-      background-image: url("https://gamefragger.com/images/articles/banners/14781.jpg");
-      text-shadow: 1px 1px #ff6a13;
-  }
+.p-name {
+  margin: 12px 0;
+  text-transform: uppercase;
+}
 
-  .stellarsurvivor {
-    background-image: url("https://steamcdn-a.akamaihd.net/steam/apps/1032120/header.jpg?t=1562247308");
-    text-shadow: 1px 1px #96d5e7;
-  }
+.p-description {
+  font-style: italic;
+  color: #3498db;
+}
 
-  .drivinity {
-    background-image: url("https://img.itch.zone/aW1hZ2UvMjczNjg3LzEzMjQ4MDIucG5n/347x500/jIutkz.png");
-    text-shadow: 1px 1px #ae765b;
-  }
+.p-sm {
+  margin-top: 25px;
+}
+
+.p-sm a {
+  display: inline-block;
+  padding: 18px;
+  transition: 0.6s;
+  text-align: center;
+}
+
+.p-sm a:hover {
+  transform: scale(1.25);
+  background-color: lightgrey;
+}
+
+.p-sm a:hover>i {
+  color: #3498db;
+}
+
+.p-sm a i {
+  color: #333333;
+  line-height: 30px;
+}
+
+.card {
+  border-radius: 0.12em;
+  box-shadow: 0 0.9em 1.4em rgba(0, 0, 0, 0.25), 0 0.25em 0.5em rgba(0, 0, 0, 0.22);
+}
+
+.info {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info > .block {
+  width: 400px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.projects a {
+  font-size: large;
+  font-weight: 600;
+  padding: 24px;
+  margin: 5px;
+  color: white;
+}
+
+.projects span {
+    display: block;
+}
+
+.tctd2 {
+  background-image: url("https://gamefragger.com/images/articles/banners/14781.jpg");
+  text-shadow: 1px 1px #ff6a13;
+}
+
+.stellarsurvivor {
+  background-image: url("https://steamcdn-a.akamaihd.net/steam/apps/1032120/header.jpg?t=1562247308");
+  text-shadow: 1px 1px #96d5e7;
+}
+
+.drivinity {
+  background-image: url("https://img.itch.zone/aW1hZ2UvMjczNjg3LzEzMjQ4MDIucG5n/347x500/jIutkz.png");
+  text-shadow: 1px 1px #ae765b;
+}
