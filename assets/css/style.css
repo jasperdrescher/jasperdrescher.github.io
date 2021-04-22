@@ -119,6 +119,16 @@ a {
   display: block;
 }
 
+.tctd2ft {
+  background-image: url("../images/tctd2ft.png");
+  text-shadow: 1px 1px #ff6a13;
+}
+
+.tctd2wony {
+  background-image: url("../images/tctd2wony.png");
+  text-shadow: 1px 1px #ff6a13;
+}
+
 .tctd2 {
   background-image: url("../images/tctd2.png");
   text-shadow: 1px 1px #ff6a13;
