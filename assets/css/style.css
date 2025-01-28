@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 /* General */
 body {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.7;
   color: #fff;
