@@ -234,12 +234,13 @@ header .overlay:hover {
 }
 
 .card.grid {
-  display: flex;
   width: 28rem;
   margin: 10px;
-  background: none;
-  border-radius: 10px;
-  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+}
+
+.card.grid:hover {
+  background: #323238;
+  box-shadow: 0 0 28px 7px rgba(16, 16, 16, 0.8);
 }
 
 .card .blue {
@@ -302,6 +303,11 @@ header .overlay:hover {
 .card .platform {
   background-color: #9728b9;
 }
+
+a.none, a.none:hover, a.none:visited, a.none:active {
+  color: inherit;
+  text-decoration: none;
+ }
 
 /* Slider */
 .slider input {
