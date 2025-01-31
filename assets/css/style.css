@@ -39,7 +39,6 @@ img.thumbnail {
 .ctooltip {
   position: relative;
   display: inline-block;
-  cursor: pointer;
 }
 
 .ctooltip .tooltipbottom {
