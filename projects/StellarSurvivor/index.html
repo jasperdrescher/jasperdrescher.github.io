@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://jasperdrescher.com/">
     
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="../../assets/images/Branding/icon.png">
+    <link rel="icon" href="../../assets/images/Branding/icon.ico">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css">
 
     <!-- JS -->
+    <script src="https://kit.fontawesome.com/2b43a8d8f4.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </head>
@@ -32,17 +33,11 @@
     <nav class="navbar navbar-expand-md sticky">
       <span class="page"><a href="../../">Portfolio</a> / Stellar Survivor</span>
       <span class="brand"><h1>Jasper Drescher</h1></span>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link ctooltip" href="../../resume/Résumé_Jasper.pdf" target=”_blank”><i class="fas fa-file-alt fa-2x"></i><span class="tooltipbottom">Résumé</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ctooltip" href="mailto:jasperdre@gmail.com" target=”_blank”><i class="fas fa-envelope fa-2x"></i><span class="tooltipbottom">Mail</span></a>
-        </li>
-      </ul>
     </nav>
+    
     <div class="container-fluid mt-2">
       <div class="row">
+
         <div class="col">
           <div class="card border-dark mb-3">
             <div class="card-header">Trailer</div>
@@ -65,23 +60,23 @@
                   </tr>
                   <tr>
                     <th scope="row">Team</th>
-                    <td><a href="../../index.html#sticks&stones">Sticks & Stones</a> 22 students</td>
+                    <td><a href="../../index.html#sticks&stones">Sticks & Stones</a> (22 students)</td>
                   </tr>
                   <tr>
                     <th scope="row">Duration</th>
-                    <td>September 2018 - July 2019</td>
+                    <td>September 2018 - July 2019 (10 months)</td>
                   </tr>
                   <tr>
                     <th scope="row">Engine</th>
-                    <td>Unreal Engine 4.22</td>
+                    <td>Unreal Engine</td>
                   </tr>
                   <tr>
                     <th scope="row">Platforms</th>
-                    <td>Windows 10, Steam</td>
+                    <td>Windows, Steam</td>
                   </tr>
                   <tr>
                     <th scope="row">Language</th>
-                    <td>C++11</td>
+                    <td>C++</td>
                   </tr>
                 </tbody>
               </table>
@@ -93,9 +88,6 @@
             </div>
             <div class="col-2">
               <a href="https://igad.itch.io/stellar-survivor" class="project-link" target=”_blank”><i class="fab fa-itch-io"></i> Itch.io</a>
-            </div>
-            <div class="col-3">
-                <a href="https://www.facebook.com/StellarSurvivor/" class="project-link" target=”_blank”><i class="fab fa-facebook"></i> Facebook</a>
             </div>
           </div>
         </div>
@@ -125,6 +117,12 @@
           <h1>Description</h1>
           <p>Stellar Survivor is a first-person, co-op photo-realistic survival game. Players can play alone or together with friends on Steam to defend their powercore against waves of aliens. Players do so by the use of weapons and traps with different characteristics that when put to good use, can take down these aliens effectively.</p>
           <p>For this project we had 4 working days per week for 1 school year. During the first block, or 8 weeks, I focused on designing the game conepts using pitches and meetings, and set up our build pipeline for Jenkins and Steam. The remaining months I worked on implementing GameSparks and SteamWorks for online matchmaking and user authentication, as well as actor and property replication. I was also part of a Stability/QA team focused on fixing crashes and bugs using Unreal Engine's crash dumps, profiling tools, and navigating call stacks.</p>
+          <h1>Resonsibilities</h1>
+          <p>- Implement the SteamWorks SDK to support player invites for online co-op</p>
+          <p>- Implement UI and menus for the main menu, HUD and player invites</p>
+          <p>- Optimize the replication graph for actors to reduce network traffic and bugs</p>
+          <p>- Replicate actors, AI, base building, combat and players for online co-op</p>
+          <p>- Profile network and game performance</p>
         </div>
         <div class="col col-lg-6">
           <h1>My contributions</h1>
@@ -300,21 +298,19 @@ public:
       </div>
     </div>
     <footer class="page-footer">
+      <img class="waves" src="../../assets/images/Branding/waves.png">
       <div class="text-center">
-        <a href="https://twitter.com/jasperdre" class="tw-ic">
-          <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-        </a>
-        <a href="https://codepen.io/JasperDre/" class="cp-ic">
-          <i class="fab fa-codepen fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-        </a>
-        <a href="https://github.com/JasperDre" class="gh-ic">
+        <a href="https://github.com/jasperdrescher" target="_blank" rel="noopener noreferrer" class="gh-ic">
           <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
         </a>
-        <a href="https://www.linkedin.com/in/jasperdre/" class="li-ic">
+        <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#97;&#115;&#112;&#101;&#114;&#100;&#114;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
+          <i class="fas fa-envelope mr-md-5 mr-3 fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jasperdrescher/" target="_blank" rel="noopener noreferrer" class="li-ic">
           <i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
         </a>
       </div>
-      <div class="footer-copyright text-center py-3">© 2019 by Jasper Drescher under the <a href="https://github.com/JasperDre/jasperdre.github.io/blob/master/LICENSE.md">MIT License</a>.</div>
+      <div class="footer-copyright text-center py-3">© 2025 by Jasper Drescher under the MIT License.</div>
     </footer>
   </body>
 </html>
